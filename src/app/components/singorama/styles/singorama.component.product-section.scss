@@ -1,0 +1,69 @@
+.product-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.img-container {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    width: 872px;
+    height: 482px;
+    margin: auto;
+}
+
+.bundle-image {
+    background: url('/assets/singorama-full-bundle-lg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.paragraph {
+    grid-column: 2;
+    line-height: 30px;
+    max-width: 730px;
+    margin: auto;
+}
+
+
+@media (max-width: 1500px) {
+    .img-container {
+        width: 800px;
+        height: 442px;
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+    .product-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .img-container {
+        grid-row-start: 2;
+        width: 1000px;
+        height: 553px;
+    }
+
+    .paragraph {
+        grid-column: 1;
+        max-width: 1000px;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .img-container {
+        width: 100%;
+        height: 50vw;
+    }
+}

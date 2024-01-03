@@ -1,0 +1,105 @@
+.background-image {
+    margin-top: 70px;
+    background: url('/assets/singer-background.png');
+    width: 100%;
+    height: 575px;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 20px 0;
+}
+
+.left-flex-container {
+    flex: 1;
+}
+
+.right-flex-container {
+    flex: 1;
+    display: flex;
+    margin-right: 20px;
+}
+
+.info-container {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+    color: #e6e6e6;
+}
+
+.percent-off {
+    width: 100%;
+    background: #bf1313;
+    height: 72px;
+    border-radius: 5px;
+}
+
+
+@media(max-width: 900px) {
+
+    .left-flex-container {
+        display: none;
+    }
+
+    .right-flex-container {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .background-image {
+        background-position: 90%;
+    }
+}
+
+
+$aspect-ratio: .86;
+
+@media(max-width: 620px) {
+    .video-thumbnail {
+        width: 100%;
+    }
+
+    .right-flex-container {
+        margin: 0 10px;
+    }
+
+    .background-image {
+        height: calc(80vw / #{$aspect-ratio});
+    }
+}
+
+
+@media(max-width: 500px) {
+    .heading {
+        font-size: 25px;
+    }
+    .percent-off {
+        height: 50px;
+    }
+}
+
+
+@media(max-width: 360px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .percent-off {
+        height: 40px;
+    }
+}
+
+
+
+@media(max-width: 320px){
+    .background-image {
+        padding: 0;
+    }
+}

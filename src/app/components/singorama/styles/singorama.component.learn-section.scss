@@ -1,0 +1,35 @@
+
+.learn-section {
+    position: relative;
+}
+.learn-section-title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #c02020;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.learn-item {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+.fa-check {
+    color: #c02020;
+    margin-right: 10px;
+}
+
+.learn-item-subject {
+    font-weight: bold;
+}
+
+.singer {
+    background: url('/assets/singer.png');
+    position: absolute;
+    width: 400px;
+    height: 1112px;
+    top: -100px;
+    left: calc((100vw / 1920px) * 400px);
+}

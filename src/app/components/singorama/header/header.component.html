@@ -1,0 +1,22 @@
+<div class="header">
+    <div class="header-content-container">
+        <i class="fa-solid fa-bars" (click)="toggleMenu(menu)"></i>
+        <div class="logo"></div>
+
+        <div class="menu-items">
+            <a [routerLink]="['/singorama']">About Singorama</a>
+            <a [routerLink]="['/singorama/testimonials']">Testimonials</a>
+            <a [routerLink]="['/singorama/faq']">FAQ</a>
+            <a href="https://b8752e78q2-mfr0eohvn42txb7.hop.clickbank.net" target="_blank">
+                <button class="header-button">ORDER NOW</button>
+            </a>
+        </div>
+    </div>  
+</div>
+
+<div #menu class="menu">
+    <i class="fa-solid fa-xmark" (click)="toggleMenu(menu)"></i>
+    <a [routerLink]="['/singorama']" (click)="toggleMenu(menu)">About Singorama</a>
+    <a [routerLink]="['/singorama/testimonials']" (click)="toggleMenu(menu)">Testimonials</a>
+    <a [routerLink]="['/singorama/faq']" (click)="toggleMenu(menu)">FAQ</a>
+</div>
