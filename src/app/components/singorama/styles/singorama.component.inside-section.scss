@@ -1,7 +1,7 @@
 .inside-container {
     width: 100%;
     background: #f3f3f3;
-    padding-bottom: 100px;
+    position: relative;
 }
 
 .inside-flex-container {
@@ -16,7 +16,7 @@
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -44,9 +44,29 @@
 }
 
 
+.inside-mask {
+    position: absolute;
+    background: #f3f3f3;
+    width: 100%;
+    height: 70px;
+    bottom: -69px;
+}
+
+
 @media (max-width: 1518px) {
     .inside-flex-container {
         width: initial;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .inside-mask {
+        display: none;
+    }
+
+    .inside-container {
+        padding-bottom: 20px;
     }
 }
 
