@@ -12,7 +12,9 @@ import { HeaderComponent } from './header/header.component';
     './styles/singorama.component.video-section.scss',
     './styles/singorama.component.product-section.scss',
     './styles/singorama.component.inside-section.scss',
-    './styles/singorama.component.learn-section.scss'
+    './styles/singorama.component.learn-section.scss',
+    './styles/singorama.component.inner-circle-section.scss',
+    './styles/singorama.component.bonus-section.scss'
   ]
 })
 export class SingoramaComponent {

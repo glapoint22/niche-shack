@@ -1,0 +1,133 @@
+.bonus-caption {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #191919;
+    margin: 100px 10px 40px;
+}
+
+.bonus-container {
+    width: 100%;
+    max-width: 850px;
+    border: 1px dashed #bc1313;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.bonus-info {
+    width: 100%;
+    max-width: 570px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.bonus-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+.bonus-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #bc1313;
+}
+
+.bonus-price {
+    margin-top: 20px;
+
+    & :first-child {
+        color: #8c1212;
+    }
+
+    & :last-child {
+        font-weight: bold;
+    }
+}
+
+
+.bonus1-image {
+    background: url('/assets/advancement-app.png');
+    width: 225px;
+    height: 425px;
+}
+
+.bonus2-image {
+    background: url('/assets/mini-rcording-studio.png');
+    width: 245px;
+    height: 321px;
+}
+
+
+.bonus3-image {
+    background: url('/assets/how-to-read-music.png');
+    width: 220px;
+    height: 332px;
+}
+
+
+
+@media (max-width: 870px) {
+    .bonus-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: unset;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .bonus-info {
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .bonus-container {
+        flex-direction: column;
+    }
+
+    .bonus1-image {
+        margin-top: 20px;
+        background: url('/assets/advancement-app-small.png');
+        width: 165px;
+        height: 312px;
+    }
+
+    .bonus2-image {
+        margin-top: 20px;
+        background: url('/assets/mini-rcording-studio-small.png');
+        width: 238px;
+        height: 311px;
+    }
+
+    .bonus3-image {
+        margin-top: 20px;
+        background: url('/assets/how-to-read-music-small.png');
+        width: 190px;
+        height: 287px;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    .bonus-caption {
+        margin-top: 50px;
+    }
+}
+
+
+
+
+@media (max-width: 250px) {
+    .bonus-title {
+        font-size: 25px;
+    }
+}
