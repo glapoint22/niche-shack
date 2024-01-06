@@ -2,6 +2,10 @@
     width: 100%;
     background: #f3f3f3;
     position: relative;
+
+    p {
+        color: #434343;
+    }
 }
 
 .inside-flex-container {
@@ -35,13 +39,10 @@
 .card-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 30px;
     text-align: center;
 }
 
-.card-description {
-    color: #434343;
-}
+
 
 
 .inside-mask {
