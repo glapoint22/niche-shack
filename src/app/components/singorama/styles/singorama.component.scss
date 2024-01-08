@@ -17,3 +17,31 @@
     width: 1156px;
     height: 639px;
 }
+
+
+@media (max-width: 800px) {
+    .bundle-image {
+        background: url('/assets/singorama-full-bundle-sm.png');
+    }
+}
+
+@media (max-width: 360px) {
+    .bundle-image {
+        background: url('/assets/singorama-full-bundle-xs.png');
+    }
+}
+
+@font-face {
+    font-family: 'cooper std';
+    src: url('/assets/fonts/CooperBlackStd.otf');
+}
+
+@font-face {
+    font-family: 'impact';
+    src: url('/assets/fonts/impact.ttf');
+}
+
+@font-face {
+    font-family: 'century gothic';
+    src: url('/assets/fonts/GOTHIC.TTF');
+}

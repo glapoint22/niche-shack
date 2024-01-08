@@ -78,7 +78,13 @@
 @media (max-width: 735px) {
     .inner-circle-image {
         width: 100%;
-        height: 48vw
+        height: 47vw
+    }
+}
+
+@media (max-width: 600px) {
+    .inner-circle-image {
+        background-image: url('/assets/inner-circle-sm.png');
     }
 }
 
@@ -86,6 +92,13 @@
 @media (max-width: 430px) {
     .inner-circle-background {
         top: 10px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .inner-circle-image {
+        background-image: url('/assets/inner-circle-xs.png');
     }
 }
 

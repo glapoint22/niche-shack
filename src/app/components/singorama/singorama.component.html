@@ -17,7 +17,6 @@
 
                 <div class="video-container" (click)="onVideoClick()">
                     <i class="fa-brands fa-youtube"></i>
-                    <img src="assets/video-thumbnail.png" class="video-thumbnail">
                 </div>
 
             </div>
@@ -35,10 +34,106 @@
             <div class="bundle-image"></div>
         </div>
 
-        <p>{{paragraph1}}</p>
-        <p>{{paragraph2}}</p>
+        <ng-container
+            *ngTemplateOutlet="type === '0'? expand: type === '1' ? improve: type === '2' ? warmups : default">
+        </ng-container>
     </div>
+
+    <ng-template #expand>
+        <p>
+            Are you seeking a solution to increase your vocal range? Well, look no further. Introducing <span
+                style="color: #bf1313; font-weight: bold;">Singorama</span>, your gateway to unlocking the full
+            potential of your voice. Experience rapid transformations as you expand your vocal range by an
+            <strong>entire octave or more</strong>. This comprehensive program delves into the nuances between your
+            chest and head voices, guiding you to seamlessly blend them into a connected, resonant mixed voice that
+            spans your entire vocal spectrum. Through specialized vocal exercises tailored to fortify your vocal
+            muscles, <span style="color: #bf1313; font-weight: bold;">Singorama</span> empowers you to gain
+            <strong>precise control</strong> without encountering cracks or breaks, ensuring a smooth, controlled
+            delivery at the peak of your vocal capabilities.
+        </p>
+
+        <p>
+            With its <strong>28 dynamic vocal training audio modules</strong>, complemented by a wealth of
+            <strong>ebooks</strong>, <strong>worksheets</strong>, and <strong>purpose-built tools</strong>, <span
+                style="color: #bf1313; font-weight: bold;">Singorama</span> doesn’t merely enhance your vocal range—it
+            revolutionizes your singing prowess. Elevate your performance as you learn to wield better tone, pitch
+            perfection, and enhanced control swiftly and effectively. This holistic approach isn't just about hitting
+            higher notes; it's about crafting a versatile, expressive instrument out of your voice, setting you on a
+            fast track to <strong>vocal mastery</strong>.
+        </p>
+    </ng-template>
+    <ng-template #improve>
+        <p>
+            Are you looking for a solution to take your singing to the next level? Well, you've come to the right place.
+            Introducing <span style="color: #bf1313; font-weight: bold;">Singorama</span>, the ultimate game-changer for
+            aspiring singers hungry to hone their craft and take their vocal abilities to new heights. In just
+            <strong>10 minutes a day</strong>, this powerhouse program revolutionizes the way singers develop their
+            skills, offering a comprehensive toolkit designed to elevate abilities to a professional level. Central to
+            <span style="color: #bf1313; font-weight: bold;">Singorama's</span> arsenal are its <strong>28 meticulously
+                crafted vocal training audio modules</strong>. These modules are like gold, meticulously designed to
+            bolster your vocal range, refine tone, nail pitch, and grant absolute control, resulting in rapid and
+            tangible improvements in your singing abilities.
+        </p>
+
+        <p>
+            Yet, <span style="color: #bf1313; font-weight: bold;">Singorama</span> goes beyond just audio modules. It's
+            a treasure trove for aspiring vocalists, providing an extensive array of supplementary resources. From
+            ebooks to specialized tools and worksheets, these complementary materials are crafted to fine-tune every
+            aspect of your singing technique. Whether it's <strong>pushing your vocal boundaries</strong>,
+            <strong>perfecting pitch accuracy</strong>, or <strong>gaining better command</strong>, <span
+                style="color: #bf1313; font-weight: bold;">Singorama</span> offers a holistic platform tailored to
+            expedite your journey toward singing mastery.
+        </p>
+    </ng-template>
+    <ng-template #warmups>
+        <p>
+            Are you seeking effective ways to warm up your voice? Look no further than <span
+                style="color: #bf1313; font-weight: bold;">Singorama!</span> It's the ultimate solution for aspiring
+            singers eager to refine their skills and elevate their vocal abilities to unprecedented levels. This program
+            underscores the significance of vocal warm-ups, providing a clear path to enhance your singing through a
+            mere <strong>10 minutes of daily dedication</strong>. At its core, <span
+                style="color: #bf1313; font-weight: bold;">Singorama</span> boasts an impressive collection of
+            <strong>28 meticulously crafted vocal training audio modules</strong>. These modules serve as a powerhouse,
+            targeting enhancements in vocal range, tone, pitch precision, and control, resulting in swift and noticeable
+            progress in the art of singing.
+        </p>
+
+        <p>
+            Yet, <span style="color: #bf1313; font-weight: bold;">Singorama</span> goes beyond just audio modules. It's
+            a treasure trove for aspiring vocalists, providing an extensive array of supplementary resources. From
+            ebooks to specialized tools and worksheets, these complementary materials are crafted to fine-tune every
+            aspect of your singing technique. Whether it's <strong>pushing your vocal boundaries</strong>,
+            <strong>perfecting pitch accuracy</strong>, or learning effective ways to <strong>warm up your
+                vocals</strong>, <span style="color: #bf1313; font-weight: bold;">Singorama</span> offers a holistic
+            platform tailored to expedite your journey toward singing mastery.
+        </p>
+    </ng-template>
+    <ng-template #default>
+        <P>
+            Are you in pursuit of a singing course that will revolutionize your singing abilities? If so, look no
+            further than <span style="color: #bf1313; font-weight: bold;">Singorama</span>. This course stands as the
+            beacon for aspiring vocalists eager to soar to professional heights. With a commitment of just <strong>10
+                minutes a day</strong>, this comprehensive program empowers individuals to realize their singing
+            ambitions. At its core, <span style="color: #bf1313; font-weight: bold;">Singorama</span> presents a robust
+            system comprising <strong>28 powerful vocal training audio modules</strong>. These modules are meticulously
+            designed to enhance vocal range, tone, pitch, and control, ensuring rapid and noticeable improvements in
+            one's singing abilities.
+        </P>
+
+        <p>
+            Beyond its audio modules, <span style="color: #bf1313; font-weight: bold;">Singorama</span> enriches the
+            learning experience through an array of supplementary resources. Users gain access to a treasure trove of
+            <strong>ebooks</strong>, <strong>worksheets</strong>, and <strong>specialized tools</strong> curated to
+            complement the audio training. These additional materials serve as valuable aids, offering comprehensive
+            support in refining various facets of singing technique. Whether aiming to extend vocal range, perfect pitch
+            accuracy, or achieve better control, <span style="color: #bf1313; font-weight: bold;">Singorama</span>
+            provides an all-encompassing platform tailored to expedite the journey towards <strong>singing
+                mastery</strong>.
+        </p>
+    </ng-template>
 </section>
+
+
 
 
 <!-- Inside Section -->
@@ -328,9 +423,13 @@
         <div class="footer">
             <img src="assets/money-back.png">
             <div class="caption">100% MONEY BACK GUARANTEE</div>
-            <div class="description">Singorama offers a robust 100% money-back guarantee valid for 60 days from the
-                initial purchase. If within this period you find yourself unsatisfied with the product, your progress,
-                or your overall experience, a refund can be obtained, no questions asked.</div>
+            <div class="description">Singorama prides itself on its unwavering commitment to your satisfaction,
+                exemplified by its robust 100% money-back guarantee extending for 60 days from the moment of purchase.
+                This guarantee ensures peace of mind for you, allowing ample time to explore the program thoroughly. If,
+                at any point within this period, you feel dissatisfied with the product, your progress, or the overall
+                experience, a straightforward refund process awaits, requiring no explanations or justifications. This
+                commitment underscores Singorama's confidence in its product's efficacy and dedication to ensuring a
+                fulfilling musical journey for you.</div>
         </div>
     </div>
 </section>
