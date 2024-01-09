@@ -1,0 +1,67 @@
+.testimonial-container {
+    margin-top: 110px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    &:nth-child(n+3) {
+        margin-top: 70px;
+    }
+}
+
+.profile-pic {
+    border: 3px solid #272727;
+    border-radius: 6px;
+    width: 90px;
+    height: 90px;
+}
+
+.content {
+    margin-left: 22px;
+}
+
+.name {
+    font-size: 28px;
+    font-family: 'century gothic';
+    font-weight: bold;
+    color: #272727;
+    margin-bottom: 10px;
+}
+
+.video {
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: 'century gothic';
+    src: url('/assets/fonts/GOTHIC.TTF');
+}
+
+
+@media (max-width: 920px) {
+    .testimonial-container {
+        width: unset;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 785px) {
+    .testimonial-container {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 675px) {
+    .video {
+        width: 100%;
+    }
+}

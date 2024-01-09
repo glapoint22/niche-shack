@@ -15,7 +15,7 @@
                 <div class="heading">{{heading}}</div>
                 <div class="percent-off">75% OFF TODAY!</div>
 
-                <div class="video-container" (click)="onVideoClick()">
+                <div class="video-container" (click)="videoService.playYouTubeVideo('3LJFx2cNMrQ')">
                     <i class="fa-brands fa-youtube"></i>
                 </div>
 
@@ -23,9 +23,6 @@
         </div>
     </div>
 </section>
-
-
-
 
 <!-- Product Section -->
 <section>
@@ -132,8 +129,6 @@
         </p>
     </ng-template>
 </section>
-
-
 
 
 <!-- Inside Section -->
@@ -419,7 +414,7 @@
     <div class="end-container">
         <div class="bundle-image"></div>
         <div class="discount">75% OFF TODAY! <span>$67</span></div>
-        <button>BUY TODAY WITH DISCOUNT</button>
+        <button>VISIT OFFICIAL WEBSITE</button>
         <div class="footer">
             <img src="assets/money-back.png">
             <div class="caption">100% MONEY BACK GUARANTEE</div>

@@ -23,7 +23,7 @@ import { CommonModule } from '@angular/common';
 export class SingoramaComponent {
   private route: ActivatedRoute = inject(ActivatedRoute);
   protected heading!: string;
-  private videoService = inject(VideoService);
+  protected videoService = inject(VideoService);
   protected type!: string | null;
 
   protected ngOnInit(): void {
@@ -46,10 +46,5 @@ export class SingoramaComponent {
         this.heading = 'LEARN TO SING LIKE A PRO';
         break;
     }
-  }
-
-
-  protected onVideoClick() {
-    this.videoService.playYouTubeVideo('3LJFx2cNMrQ');
   }
 }

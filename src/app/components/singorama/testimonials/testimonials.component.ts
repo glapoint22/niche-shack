@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
+import { VideoService } from '../../../services/video/video.service';
 
 @Component({
   selector: 'ns-testimonials',
@@ -9,5 +10,6 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent {
-
+  protected videoService = inject(VideoService);
+  
 }
