@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  public hoplink: string = 'https://b8752e78q2-mfr0eohvn42txb7.hop.clickbank.net';
   private menuVisible!: boolean;
 
   protected toggleMenu(menu: HTMLElement): void {

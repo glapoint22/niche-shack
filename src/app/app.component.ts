@@ -1,5 +1,5 @@
 import { Component, ViewContainerRef, afterNextRender, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { VideoService } from './services/video/video.service';
 import { MetaTagService } from './services/meta-tag/meta-tag.service';
@@ -17,6 +17,7 @@ export class AppComponent {
   private videoService = inject(VideoService);
   private router = inject(Router);
   private metaTagService = inject(MetaTagService);
+  private viewportScroller = inject(ViewportScroller);
 
   constructor() {
     afterNextRender(() => {
@@ -37,7 +38,9 @@ export class AppComponent {
 
         // Set the meta tags for this page
         this.metaTagService.setTags(currentRoute.snapshot.data as PageData);
-      }
+
+        this.viewportScroller.scrollToPosition([0, 0]);
+      } 
     });
   }
 }

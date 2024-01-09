@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { VideoService } from '../../services/video/video.service';
 import { CommonModule } from '@angular/common';
+import { ProductType } from './enums/product-type';
 
 @Component({
   selector: 'ns-singorama',
@@ -25,20 +26,21 @@ export class SingoramaComponent {
   protected heading!: string;
   protected videoService = inject(VideoService);
   protected type!: string | null;
+  protected ProductType = ProductType;
 
   protected ngOnInit(): void {
     this.type = this.route.snapshot.queryParamMap.get('type');
 
     switch (this.type) {
-      case '0':
-        this.heading = 'EXPAND YOUR VOCAL RANGE';
+      case ProductType.IncreaseVocalRange:
+        this.heading = 'INCREASE YOUR VOCAL RANGE';
         break;
 
-      case '1':
+      case ProductType.ImproveSingingSkills:
         this.heading = 'IMPROVE YOUR SINGING SKILLS';
         break;
 
-      case '2':
+      case ProductType.WarmUpVocals:
         this.heading = 'WARM UP FOR VOCAL MASTERY';
         break;
 

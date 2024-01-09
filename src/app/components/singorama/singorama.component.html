@@ -1,4 +1,4 @@
-<ns-header></ns-header>
+<ns-header #header></ns-header>
 
 <!-- Video Section -->
 <section>
@@ -32,11 +32,11 @@
         </div>
 
         <ng-container
-            *ngTemplateOutlet="type === '0'? expand: type === '1' ? improve: type === '2' ? warmups : default">
+            *ngTemplateOutlet="type === ProductType.IncreaseVocalRange? increaseVocalRange: type === ProductType.ImproveSingingSkills ? improveSingingSkills: type === ProductType.WarmUpVocals ? warmUpVocals : default">
         </ng-container>
     </div>
 
-    <ng-template #expand>
+    <ng-template #increaseVocalRange>
         <p>
             Are you seeking a solution to increase your vocal range? Well, look no further. Introducing <span
                 style="color: #bf1313; font-weight: bold;">Singorama</span>, your gateway to unlocking the full
@@ -59,7 +59,7 @@
             fast track to <strong>vocal mastery</strong>.
         </p>
     </ng-template>
-    <ng-template #improve>
+    <ng-template #improveSingingSkills>
         <p>
             Are you looking for a solution to take your singing to the next level? Well, you've come to the right place.
             Introducing <span style="color: #bf1313; font-weight: bold;">Singorama</span>, the ultimate game-changer for
@@ -82,7 +82,7 @@
             expedite your journey toward singing mastery.
         </p>
     </ng-template>
-    <ng-template #warmups>
+    <ng-template #warmUpVocals>
         <p>
             Are you seeking effective ways to warm up your voice? Look no further than <span
                 style="color: #bf1313; font-weight: bold;">Singorama!</span> It's the ultimate solution for aspiring
@@ -414,7 +414,10 @@
     <div class="end-container">
         <div class="bundle-image"></div>
         <div class="discount">75% OFF TODAY! <span>$67</span></div>
-        <button>VISIT OFFICIAL WEBSITE</button>
+        <a [href]="header.hoplink" target="_blank">
+            <button>VISIT OFFICIAL WEBSITE</button>
+        </a>
+
         <div class="footer">
             <img src="assets/money-back.png">
             <div class="caption">100% MONEY BACK GUARANTEE</div>

@@ -24,9 +24,11 @@ export class MetaTagService {
 
     // Title
     if (pageData.title) {
-      this.titleService.setTitle(pageData.title);
-      this.metaService.addTag({ property: 'og:title', content: pageData.title });
-      this.metaService.addTag({ name: 'twitter:title', content: pageData.title });
+      const title = pageData.title.includes('Niche Shack') ? pageData.title : pageData.title + ' - Niche Shack';
+
+      this.titleService.setTitle(title);
+      this.metaService.addTag({ property: 'og:title', content: title });
+      this.metaService.addTag({ name: 'twitter:title', content: title });
     }
 
 
