@@ -20,17 +20,17 @@
 }
 
 .singer-background1 {
-    background-image: url('/assets/singer-background.png');
+    background-image: url('/assets/singorama/singer-background.png');
     animation-delay: 0s;
 }
 
 .singer-background2 {
-    background-image: url('/assets/singer-background2.png');
+    background-image: url('/assets/singorama/singer-background2.png');
     animation-delay: 8s;
 }
 
 .singer-background3 {
-    background-image: url('/assets/singer-background3.png');
+    background-image: url('/assets/singorama/singer-background3.png');
     animation-delay: 16s;
 }
 
@@ -62,7 +62,7 @@
     height: 335px;
     border: 3px solid #bf1313;
     cursor: pointer;
-    background-image: url('/assets/video-thumbnail.png');
+    background-image: url('/assets/singorama/video-thumbnail.png');
 }
 
 .fa-youtube {
@@ -146,7 +146,7 @@
     }
 
     .video-section-container {
-        background-image: url('/assets/mobile-background.png');
+        background-image: url('/assets/singorama/mobile-background.png');
         background-size: cover;
     }
 }
@@ -179,17 +179,17 @@
 
 @media(max-width: 600px) {
     .video-section-container {
-        background-image: url('/assets/mobile-background-sm.png');
+        background-image: url('/assets/singorama/mobile-background-sm.png');
     }
 }
 
 
 @media(max-width: 360px) {
     .video-section-container {
-        background-image: url('/assets/mobile-background-xs.png');
+        background-image: url('/assets/singorama/mobile-background-xs.png');
     }
 
     .video-container {
-        background-image: url('/assets/video-thumbnail-sm.png');
+        background-image: url('/assets/singorama/video-thumbnail-sm.png');
     }
 }

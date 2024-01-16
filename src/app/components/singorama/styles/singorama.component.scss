@@ -13,7 +13,7 @@
 
 
 .bundle-image {
-    background: url('/assets/singorama-full-bundle-lg.png');
+    background: url('/assets/singorama/singorama-full-bundle-lg.png');
     width: 1156px;
     height: 639px;
 }
@@ -21,13 +21,13 @@
 
 @media (max-width: 800px) {
     .bundle-image {
-        background: url('/assets/singorama-full-bundle-sm.png');
+        background: url('/assets/singorama/singorama-full-bundle-sm.png');
     }
 }
 
 @media (max-width: 360px) {
     .bundle-image {
-        background: url('/assets/singorama-full-bundle-xs.png');
+        background: url('/assets/singorama/singorama-full-bundle-xs.png');
     }
 }
 

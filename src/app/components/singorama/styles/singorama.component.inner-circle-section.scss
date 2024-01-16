@@ -3,7 +3,7 @@
 }
 
 .wave {
-    background: url('/assets/wave.png');
+    background: url('/assets/singorama/wave.png');
     width: 100%;
     height: 160px;
     position: absolute;
@@ -49,7 +49,7 @@
 }
 
 .inner-circle-image {
-    background: url('/assets/inner-circle.png');
+    background: url('/assets/singorama/inner-circle.png');
     width: 731px;
     height: 356px;
     background-size: contain;
@@ -67,7 +67,7 @@
 
 @media (max-width: 1120px) {
     .wave {
-        background: url('/assets/wave-small.png');
+        background: url('/assets/singorama/wave-small.png');
         height: 72px;
         top: -20px;
     }
@@ -84,7 +84,7 @@
 
 @media (max-width: 600px) {
     .inner-circle-image {
-        background-image: url('/assets/inner-circle-sm.png');
+        background-image: url('/assets/singorama/inner-circle-sm.png');
     }
 }
 
@@ -98,7 +98,7 @@
 
 @media (max-width: 360px) {
     .inner-circle-image {
-        background-image: url('/assets/inner-circle-xs.png');
+        background-image: url('/assets/singorama/inner-circle-xs.png');
     }
 }
 
