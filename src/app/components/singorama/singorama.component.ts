@@ -27,9 +27,11 @@ export class SingoramaComponent {
   protected videoService = inject(VideoService);
   protected type!: string | null;
   protected ProductType = ProductType;
+  protected hoplink!: string;
 
   protected ngOnInit(): void {
     this.type = this.route.snapshot.queryParamMap.get('type');
+    this.hoplink = this.route.snapshot.data['hoplink'];
 
     switch (this.type) {
       case ProductType.IncreaseVocalRange:

@@ -1,0 +1,49 @@
+.product-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+
+    p {
+        grid-column: 2;
+        padding: 0 10px;
+    }
+}
+
+.pianoforall-product-image {
+    width: 650px;
+    height: 488px;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+@media (max-width: 1370px) {
+    .product-section-container {
+        grid-template-columns: 1fr;
+
+        p {
+            grid-column: 1;
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+
+    .pianoforall-product-image {
+        grid-row-start: 2;
+        margin: 20px auto;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .pianoforall-product-image {
+        width: 100%;
+        height: 72vw;
+        background-position: center;
+    }
+}

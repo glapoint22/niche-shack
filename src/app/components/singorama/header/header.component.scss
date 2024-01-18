@@ -1,41 +1,10 @@
 .header {
-    width: 100%;
-    height: 70px;
     background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.5);
-}
-
-.header-content-container {
-    width: 100%;
-    max-width: 1040px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.menu-items {
-    width: 100%;
-    max-width: 544px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header-button {
-    width: 128px;
-    height: 50px;
-    color: #f5f5f5;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 5px;
     background-color: #bf1313;
+    color: #f5f5f5;
 }
 
 a {
@@ -46,37 +15,18 @@ a {
     background-image: url('/assets/singorama/singorama-logo.png');
     width: 210px;
     height: 51px;
-    background-size: cover;
 }
 
 .fa-bars {
-    font-size: 30px;
     color: #646464;
-    display: none;
 }
 
 
 .menu {
-    width: 100%;
-    height: 163px;
     background-color: #f5f5f5;
     border: 1px solid #797979;
-    padding: 20px 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(0, -100%);
-    transition: transform 0.3s ease;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2000;
 
     .fa-xmark {
-        position: absolute;
-        font-size: 40px;
-        right: 20px;
-        top: 10px;
         color: #353535;
     }
 }
@@ -93,24 +43,7 @@ a {
 
 
 @media(max-width: 620px) {
-
-    .fa-bars {
-        display: block;
-    }
-
     .logo {
         display: none;
-    }
-
-    .menu-items {
-        width: auto;
-
-        & a:not(:last-child) {
-            display: none;
-        }
-    }
-
-    .menu {
-        display: flex;
     }
 }

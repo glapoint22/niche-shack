@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: '../../../templates/header.template.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent extends Header { 
+export class HeaderComponent extends Header {
   protected override ngOnInit(): void {
     super.ngOnInit();
 
@@ -18,16 +18,16 @@ export class HeaderComponent extends Header {
 
     this.menuItems = [
       {
-        name: 'About Singorama',
+        name: 'About Pianoforall',
         link: '/singorama'
       },
       {
         name: 'Testimonials',
-        link: '/singorama/testimonials'
+        link: '/pianoforall/testimonials'
       },
       {
         name: 'FAQ',
-        link: '/singorama/faq'
+        link: '/pianoforall/faq'
       }
     ]
   }

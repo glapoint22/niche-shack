@@ -1,0 +1,97 @@
+.wave {
+    background-image: url('/assets/pianoforall/wave.png');
+    width: 100%;
+    height: 92px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.works-container {
+    width: 100%;
+    background: #981127;
+}
+
+.works-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 20px;
+
+    p {
+        grid-column: 1;
+        color: #b8b8b8;
+    }
+}
+
+.works-heading {
+    grid-column: 1;
+    font-size: 48px;
+    font-weight: bold;
+    color: #e6e6e6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-audio-image {
+    background-image: url('/assets/pianoforall/video-audio.jpg');
+    width: 650px;
+    height: 570px;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-top: 28px;
+}
+
+
+
+@media (max-width: 1400px) {
+    .works-grid-container {
+        grid-template-columns: 1fr;
+
+        p {
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+
+    .video-audio-image {
+        grid-row-start: 3;
+        margin: 20px auto;
+        grid-column: 1;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .video-audio-image {
+        width: 100%;
+        height: 82vw;
+        background-position: center;
+    }
+
+    .works-grid-container {
+        padding: 0;
+
+        p, .works-heading {
+            padding: 0 20px;
+        }
+    }
+}
+
+
+@media (max-width: 300px) {
+    .works-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 250px) {
+    .works-heading {
+        font-size: 30px;
+    }
+}
