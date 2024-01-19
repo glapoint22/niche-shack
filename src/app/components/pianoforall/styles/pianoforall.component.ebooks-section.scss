@@ -1,0 +1,61 @@
+#ebooks {
+    h1 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        text-align: center;
+        margin: 0 10px 20px;
+        color: #242323;
+    }
+}
+
+
+
+.ebooks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.ebook {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    width: 100%;
+    padding: 20px;
+
+    img {
+        border: 1px solid #747474;
+        margin: auto;
+        width: 100%;
+        max-width: 284px;
+        display: block;
+        margin: auto;
+    }
+
+    h3 {
+        color: #981127;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    .ebook {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .ebook {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

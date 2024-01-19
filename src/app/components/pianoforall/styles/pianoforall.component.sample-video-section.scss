@@ -1,0 +1,85 @@
+.sample-video-container {
+    background: #242424;
+    padding: 30px 0;
+
+    h1 {
+        color: #f1f1f1;
+        text-align: center;
+        margin: 0 10px 5px;
+        font-size: 40px;
+    }
+
+    p {
+        margin: auto;
+        width: 100%;
+        max-width: 615px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        color: #b7b7b7;
+    }
+}
+
+.underline {
+    background-image: url('/assets/pianoforall/underline.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 650px;
+    height: 33px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.sample-video {
+    background-image: url('/assets/pianoforall/sample-video.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 595px;
+    height: 335px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        background-image: url('/assets/pianoforall/youtube-button.png');
+        width: 12%;
+        height: 15%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .underline {
+        height: 5vw;
+    }
+
+    .sample-video-container {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+    .sample-video {
+        height: 54vw;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .sample-video-container {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

@@ -7,12 +7,13 @@ $section-height: 650px;
 }
 
 .piano-player-background {
-    background-image: url('/assets/pianoforall/piano-player-background.png');
+    // background-image: url('/assets/pianoforall/piano-player-background.png');
     width: 100%;
     height: $section-height;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-color: #0e060f;
+    position: relative;
+    // background-position: 50%;
+    // background-repeat: no-repeat;
+    // background-color: #0e060f;
 }
 
 
@@ -89,9 +90,9 @@ $section-height: 650px;
         justify-content: center;
     }
 
-    .piano-player-background {
-        background-position: 100%;
-    }
+    // .piano-player-background {
+    //     background-position: 100%;
+    // }
 }
 
 
@@ -118,7 +119,7 @@ $section-height: 650px;
         background-repeat: no-repeat;
     }
 
-    .piano-player-background {
-        height: 106vw;
-    }
+    // .piano-player-background {
+    //     height: 106vw;
+    // }
 }
