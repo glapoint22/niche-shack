@@ -1,47 +1,45 @@
 <ns-header></ns-header>
 
-<!-- <div style="position: relative; height: 650px;">
-    <img ngSrc="/assets/pianoforall/piano-player-background.png" fill priority>
-</div> -->
+
 
 
 <!-- Video Section -->
 <section>
     <div class="video-section-container">
-        <div class="piano-player-background">
-            <img
-  src="assets/pianoforall/piano-player-background.png"
-  srcset="assets/pianoforall/piano-player-background.png 1920w, assets/pianoforall/piano-player-background-600.png 600w"
-  style="object-fit: cover; width: 100%;"
-  
-  alt="Description" fill priority
-/>
+        <div #playerBackground class="piano-player-background">
+            <img ngSrc="piano-player-background"
+                
+                alt="Piano Player" fill priority ngSrcset="640w, 750w, 1920w"
+                 />
         </div>
-        <!-- <div class="video-section-flex-container">
+        <div class="video-section-flex-container">
             <div class="left-flex"></div>
             <div class="right-flex">
                 <div class="video-section-content">
-                    <div class="pianoforall-logo"></div>
+                    <div class="pianoforall-logo">
+                        <img ngSrc="assets/pianoforall/piano-for-all.webp" fill priority>
+                    </div>
                     <div class="discount-banner">
                         <div class="text">38% OFF TODAY</div>
                     </div>
-                    <div class="pianoforall-video-thumbnail"></div>
+                    <div class="pianoforall-video-thumbnail">
+                        <img ngSrc="assets/pianoforall/video-thumbnail.webp" fill priority>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </section>
 
-<div style="margin-top: 5000px;">
-    <img style="display: block;" ngSrc="assets/pianoforall/advanced-blues.png" width="284" height="164">
-    <img style="display: block;" ngSrc="assets/pianoforall/advanced-chords.png" width="284" height="164">
-</div>
+
 
 
 <!-- Product Section -->
-<!-- <section>
+<section>
     <div class="product-section-container">
-        <div class="pianoforall-product-image"></div>
+        <div class="pianoforall-product-image">
+            <img ngSrc="assets/pianoforall/pianoforall-product.jpg" fill priority>
+        </div>
 
         <P>Are you interested in learning how to play the piano or keyboard but don't know where to start? Well, you've
             come
@@ -66,12 +64,14 @@
             experience,
             setting the stage for a lifelong love of playing the piano or keyboard.</p>
     </div>
-</section> -->
+</section>
 
 
 <!-- How It Works -->
-<!-- <section>
-    <div class="wave"></div>
+<section>
+    <div class="wave">
+        <img ngSrc="assets/pianoforall/wave.png" fill> 
+    </div>
     <div class="works-container">
         <div class="works-grid-container">
             <div class="works-heading">How Pianoforall Works</div>
@@ -97,23 +97,25 @@
                 video and audio resources ensures a holistic approach to musical education, catering to your individual
                 preferences and paving the way for a fulfilling piano-playing journey.</p>
 
-            <div class="video-audio-image"></div>
+            <div class="video-audio-image">
+                <img ngSrc="assets/pianoforall/video-audio.jpg" fill>
+            </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 <!-- Interactive eBooks -->
-<!-- <section>
+<section>
     <div id="ebooks">
         <h1>Interactive eBooks</h1>
         <h4>Use on all your devices – PC – Mac – Android – iOS – Tablets – Phones</h4>
 
         <div class="ebooks-container">
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/party-time.png" alt="Party Time Rhythm Style Piano">
+                <img src="/assets/pianoforall/party-time.png" alt="Party Time Rhythm Style Piano" loading="lazy" fetchpriority="auto">
                 <h3>Party Time Rhythm Style Piano</h3>
                 <p>With this first eBook, you’ll learn to play different rhythm styles for piano using chords. It
                     features 15
@@ -124,9 +126,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/blues-rock-n-roll.png" alt="Blues & Rock n Roll">
+                <img src="/assets/pianoforall/blues-rock-n-roll.png" alt="Blues & Rock n Roll" loading="lazy" fetchpriority="auto">
                 <h3>Blues & Rock 'n' Roll</h3>
                 <p>Next, you’ll discover the art of playing rock 'n' roll piano and blues piano. Unlock the secrets
                     behind these
@@ -137,9 +139,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/chord-magic.png" alt="Chord Magic">
+                <img src="/assets/pianoforall/chord-magic.png" alt="Chord Magic" loading="lazy" fetchpriority="auto">
                 <h3>Chord Magic</h3>
                 <p>In this third ebook, you'll discover more basic piano chords using clever memory tricks. Practice
                     cool chord
@@ -151,9 +153,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/advanced-chords.png" alt="Advanced Chords Made Easy">
+                <img src="/assets/pianoforall/advanced-chords.png" alt="Advanced Chords Made Easy" loading="lazy" fetchpriority="auto">
                 <h3>Advanced Chords Made Easy</h3>
                 <p>Now you're all set to delve into advanced piano chords, and Pianoforall guides you through the
                     process with
@@ -163,9 +165,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/ballad-style.png" alt="Ballad Style">
+                <img src="/assets/pianoforall/ballad-style.png" alt="Ballad Style" loading="lazy" fetchpriority="auto">
                 <h3>Ballad Style</h3>
                 <p>After gaining a solid understanding of chords, you’ll effortlessly craft a captivating piano ballad
                     and
@@ -174,9 +176,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/jazz-piano.png" alt="Jazz Piano Made Easy">
+                <img src="/assets/pianoforall/jazz-piano.png" alt="Jazz Piano Made Easy" loading="lazy" fetchpriority="auto">
                 <h3>Jazz Piano Made Easy</h3>
                 <p>It's time to elevate your skills and delve into the world of jazz piano. You’ll discover effortlessly
                     easy
@@ -187,9 +189,9 @@
                 </p>
             </div>
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/advanced-blues.png" alt="Advanced Blues & Fake Stride">
+                <img src="/assets/pianoforall/advanced-blues.png" alt="Advanced Blues & Fake Stride" loading="lazy" fetchpriority="auto">
                 <h3>Advanced Blues & Fake Stride</h3>
                 <p>In Book 7, you will delve deeper into the blues piano techniques introduced earlier. You’ll discover
                     various
@@ -201,9 +203,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/taming-classics.png" alt="Taming the Classics">
+                <img src="/assets/pianoforall/taming-classics.png" alt="Taming the Classics" loading="lazy" fetchpriority="auto">
                 <h3>Taming the Classics</h3>
                 <p>Through a combination of chord expertise and the assistance of Pianoforall Sight Reading tools, you
                     can now
@@ -213,9 +215,9 @@
             </div>
 
 
-            
+
             <div class="ebook">
-                <img src="/assets/pianoforall/speed-learning.png" alt="Speed Learning">
+                <img src="/assets/pianoforall/speed-learning.png" alt="Speed Learning" loading="lazy" fetchpriority="auto">
                 <h3>Speed Learning</h3>
                 <p>Many people find the prospect of practicing scales and exercises unappealing, yet these activities
                     significantly accelerate the learning process. There's no need for them to be dull – in this final
@@ -228,24 +230,28 @@
     </div>
 
 
-</section> -->
+</section>
 
 
 <!-- Sample Video -->
-<!-- <section>
+<section>
     <div class="sample-video-container">
         <h1>300 Step-by-step Video Lessons</h1>
-        <div class="underline"></div>
+        <div class="underline">
+            <img ngSrc="assets/pianoforall/underline.png" fill>
+        </div>
 
         <p>Pianoforall comprises 300 video lessons with detailed step-by-step instructions, amounting to a total
             duration of over 25 hours. Included below is a preview video from one of the lessons.</p>
-        <div class="sample-video"></div>
+        <div class="sample-video">
+            <img ngSrc="assets/pianoforall/sample-video.png" fill>
+        </div>
     </div>
-</section> -->
+</section>
 
 
 <!-- Perks -->
-<!-- <section>
+<section>
     <div class="perks-container">
         <div class="heading">
             PIANOFORALL PERKS
@@ -261,7 +267,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/offline-access.png" alt="Offline Access">
+                <img src="assets/pianoforall/offline-access.png" alt="Offline Access" loading="lazy" fetchpriority="auto">
                 <h3>OFFLINE ACCESS</h3>
                 <P>Pianoforall offers a unique piano learning experience with the convenience of offline access,
                     eliminating the need for constant internet connectivity. Say goodbye to concerns about slow video
@@ -270,7 +276,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/any-device.png" alt="On Any Device">
+                <img src="assets/pianoforall/any-device.png" alt="On Any Device" loading="lazy" fetchpriority="auto">
                 <h3>ON ANY DEVICE</h3>
                 <P>Unlock the flexibility to learn piano on your own terms. Whether you prefer practicing on a computer,
                     tablet, or smartphone, this course enables seamless learning on any device. Effortlessly download or
@@ -281,7 +287,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/learn-any-time.png" alt="Learn At Any Time">
+                <img src="assets/pianoforall/learn-any-time.png" alt="Learn At Any Time" loading="lazy" fetchpriority="auto">
                 <h3>LEARN AT ANY TIME</h3>
                 <P>Pianoforall empowers learners to progress at their own pace, allowing for a personalized and
                     stress-free journey into piano mastery. Enjoy the freedom of setting your own schedule without the
@@ -291,7 +297,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/free-updates.png" alt="Free Updates for Life">
+                <img src="assets/pianoforall/free-updates.png" alt="Free Updates for Life" loading="lazy" fetchpriority="auto">
                 <h3>FREE UPDATES FOR LIFE</h3>
                 <P>Experience continuous improvement with Pianoforall, as all future updates come to you free of charge
                     – for life. Stay current with the latest enhancements and additions to the course without any
@@ -302,7 +308,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/one-time-payment.png" alt="One-time Payment">
+                <img src="assets/pianoforall/one-time-payment.png" alt="One-time Payment" loading="lazy" fetchpriority="auto">
                 <h3>ONE-TIME PAYMENT</h3>
                 <P>Pianoforall offers a hassle-free learning experience with its one-time payment model, ensuring that
                     users enjoy lifetime access to the piano course without the burden of recurring payments or
@@ -313,7 +319,7 @@
 
 
             <div class="perk">
-                <img src="assets/pianoforall/great-support.png" alt="Great Support">
+                <img src="assets/pianoforall/great-support.png" alt="Great Support" loading="lazy" fetchpriority="auto">
                 <h3>GREAT SUPPORT</h3>
                 <P>Pianoforall piano course is renowned for its exceptional support system, providing students with
                     valuable assistance throughout their learning journey. The platform stands out by offering
@@ -323,14 +329,30 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 
 
 <!-- End -->
-<!-- <section>
-    <div style="background: #0e0e0e; width: 100%; padding: 70px 0;">
-        <div class="pianoforall-logo" style="width: 100%; background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
+<section>
+    <div style="background: #0e0e0e; width: 100%; padding: 135px 0; position: relative;">
+        <img ngSrc="assets/pianoforall/piano-for-all.webp" fill style="max-width: 595px; margin: auto; max-height: 130px; object-fit: contain;">
     </div>
-</section> -->
+
+    <div class="pianoforall-product-image">
+        <img ngSrc="assets/pianoforall/pianoforall-product.jpg" fill priority>
+    </div>
+
+    <div class="discount">38% OFF TODAY! <span>$49</span></div>
+        <a [href]="hoplink" target="_blank">
+            <button style="background: #bc1313;
+            padding: 0 20px;
+            height: 66px;
+            border-radius: 33px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            margin: 35px auto 0; display: block;">BUY WITH DISCOUNT</button>
+        </a>
+</section>

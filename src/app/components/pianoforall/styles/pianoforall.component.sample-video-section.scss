@@ -20,22 +20,23 @@
 }
 
 .underline {
-    background-image: url('/assets/pianoforall/underline.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url('/assets/pianoforall/underline.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
     width: 100%;
     max-width: 650px;
     height: 33px;
     margin: auto;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .sample-video {
-    background-image: url('/assets/pianoforall/sample-video.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url('/assets/pianoforall/sample-video.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
     width: 100%;
     max-width: 595px;
     height: 335px;
@@ -44,6 +45,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 
     &::after {
         content: "";
@@ -52,6 +54,7 @@
         height: 15%;
         background-size: contain;
         background-repeat: no-repeat;
+        position: absolute;
     }
 }
 
