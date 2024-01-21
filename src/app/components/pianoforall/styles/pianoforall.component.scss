@@ -11,3 +11,20 @@
     width: 650px;
     height: 488px;
 }
+
+.youtube-button {
+    max-width: 80px;
+    max-height: 56px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media (max-width: 615px) {
+    .youtube-button {
+        max-width: 13.01vw;
+        max-height: 9.106vw;
+    }
+}

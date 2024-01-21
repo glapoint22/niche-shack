@@ -7,13 +7,13 @@ $section-height: 650px;
 }
 
 .piano-player-background {
-    width: 100%;
     height: $section-height;
     position: relative;
     background-color: black;
 
     img {
         object-fit: cover;
+        object-position: top;
     }
 }
 
@@ -64,22 +64,24 @@ $section-height: 650px;
     width: 100%;
     height: 335px;
     // background-image: url('/assets/pianoforall/video-thumbnail.webp');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     cursor: pointer;
     position: relative;
 
-    &::after {
-        content: "";
-        background-image: url('/assets/pianoforall/youtube-button.png');
-        width: 12%;
-        height: 15%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
+    // &::after {
+    //     content: "";
+    //     background-image: url('/assets/pianoforall/youtube-button.png');
+    //     width: 12%;
+    //     height: 15%;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    // }
 }
+
+
 
 
 
@@ -109,7 +111,7 @@ $section-height: 650px;
 
     .pianoforall-logo {
         width: 100%;
-        height: 21vw;
+        height: 20.556vw;
         // background-size: contain;
         // background-repeat: no-repeat;
     }
@@ -119,12 +121,25 @@ $section-height: 650px;
     }
 
     .pianoforall-video-thumbnail {
-        height: 55vw;
-        background-size: contain;
-        background-repeat: no-repeat;
+        height: 53.056vw;
+        // background-size: contain;
+        // background-repeat: no-repeat;
     }
 
     .piano-player-background {
         height: 106vw;
     }
+
+    .youtube-button {
+        max-width: 13.01vw;
+        max-height: 9.106vw;
+    }
 }
+
+
+// @media (max-width: 500px) {
+//     .youtube-play-button {
+//         max-width: 60px;
+//         max-height: 42px;
+//     }
+// }

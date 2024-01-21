@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-import { IMAGE_CONFIG, IMAGE_LOADER, ImageLoaderConfig, NgOptimizedImage } from '@angular/common';
+import { IMAGE_LOADER, ImageLoaderConfig, NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { VideoService } from '../../services/video/video.service';
 
 @Component({
   selector: 'ns-pianoforall',
@@ -16,7 +17,8 @@ import { ActivatedRoute } from '@angular/router';
     './styles/pianoforall.component.ebooks-section.scss',
     './styles/pianoforall.component.sample-video-section.scss',
     './styles/pianoforall.component.perks-section.scss',
-    './styles/pianoforall.component.end-section.scss'
+    './styles/pianoforall.component.end-section.scss',
+    './styles/pianoforall.component.money-back-section.scss'
   ],
   providers: [
     {
@@ -28,7 +30,7 @@ import { ActivatedRoute } from '@angular/router';
         if (config.width && config.width != 1920) {
           width = '-' + config.width;
         }
-        return url + width + '.png';
+        return url + width + '.avif';
       },
     },
   ]
@@ -36,6 +38,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PianoforallComponent {
   protected hoplink!: string;
   private route: ActivatedRoute = inject(ActivatedRoute);
+  protected videoService = inject(VideoService);
 
   protected ngOnInit(): void {
     this.hoplink = this.route.snapshot.data['hoplink'];

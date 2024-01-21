@@ -47,21 +47,23 @@
     cursor: pointer;
     position: relative;
 
-    &::after {
-        content: "";
-        background-image: url('/assets/pianoforall/youtube-button.png');
-        width: 12%;
-        height: 15%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
+    // &::after {
+    //     content: "";
+    //     background-image: url('/assets/pianoforall/youtube-button.png');
+    //     width: 12%;
+    //     height: 15%;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    // }
 }
 
 
 @media (max-width: 670px) {
     .underline {
         height: 5vw;
+        width: unset;
+        margin: 0 10px 30px;
     }
 
     .sample-video-container {
@@ -75,6 +77,8 @@
 @media (max-width: 620px) {
     .sample-video {
         height: 54vw;
+        width: unset;
+        margin: 0 20px;
     }
 }
 

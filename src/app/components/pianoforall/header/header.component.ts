@@ -14,7 +14,7 @@ export class HeaderComponent extends Header {
   protected override ngOnInit(): void {
     super.ngOnInit();
 
-    this.buttonLabel = 'ORDER NOW';
+    this.buttonLabel = 'VISIT OFFICIAL WEBSITE';
 
     this.menuItems = [
       {
