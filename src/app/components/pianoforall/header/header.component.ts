@@ -19,7 +19,7 @@ export class HeaderComponent extends Header {
     this.menuItems = [
       {
         name: 'About Pianoforall',
-        link: '/singorama'
+        link: '/pianoforall'
       },
       {
         name: 'Testimonials',

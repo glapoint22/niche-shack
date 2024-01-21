@@ -11,7 +11,7 @@ export const SINGORAMA_ROUTES: Routes = [{
                 title: 'Singorama',
                 description: 'Transform your singing abilities with Singorama\'s 10-minute daily program. 28 powerful audio modules enhance vocal range, tone, pitch, and control.',
                 url: 'singorama',
-                image: 'singorama-full-bundle-lg.png'
+                image: 'singorama/singorama-full-bundle-lg.png'
             }
         },
         {
