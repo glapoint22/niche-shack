@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-import { IMAGE_LOADER, ImageLoaderConfig, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { VideoService } from '../../services/video/video.service';
+import { VideoComponent } from '../shared/video/video.component';
 
 @Component({
   selector: 'ns-pianoforall',
   standalone: true,
-  imports: [HeaderComponent, NgOptimizedImage],
+  imports: [HeaderComponent, NgOptimizedImage, VideoComponent],
   templateUrl: './pianoforall.component.html',
   styleUrls: [
     './styles/pianoforall.component.scss',
@@ -20,20 +21,6 @@ import { VideoService } from '../../services/video/video.service';
     './styles/pianoforall.component.end-section.scss',
     './styles/pianoforall.component.money-back-section.scss'
   ],
-  providers: [
-    {
-      provide: IMAGE_LOADER,
-      useValue: (config: ImageLoaderConfig) => {
-        const url = 'assets/pianoforall/' + config.src;
-        let width = '';
-        
-        if (config.width && config.width != 1920) {
-          width = '-' + config.width;
-        }
-        return url + width + '.avif';
-      },
-    },
-  ]
 })
 export class PianoforallComponent {
   protected hoplink!: string;

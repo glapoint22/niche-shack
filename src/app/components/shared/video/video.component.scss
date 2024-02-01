@@ -1,0 +1,13 @@
+.video-image-container {
+    width: 100%;
+    max-width: 595px;
+    cursor: pointer;
+    position: relative;
+}
+
+.youtube-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}

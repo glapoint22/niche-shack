@@ -1,0 +1,7 @@
+{
+    "server": {
+      "keyPath": "C:/Users/glapo/Desktop/server-key.pem",
+      "certPath": "C:/Users/glapo/Desktop/server-certificate.pem",
+      "passphrase": "Cyb668622"
+    }
+  }

@@ -1,0 +1,30 @@
+.background-image {
+    position: relative;
+    width: 100%;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.video-image-container {
+    width: 100%;
+    max-width: 595px;
+    cursor: pointer;
+    position: relative;
+
+    .youtube-play-button {
+        max-width: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    
+
+    @media (max-width: 500px) {
+        .youtube-play-button {
+            width: 20vw;
+        }
+    }
+}

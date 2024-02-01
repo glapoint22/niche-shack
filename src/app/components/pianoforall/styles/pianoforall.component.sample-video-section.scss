@@ -17,6 +17,12 @@
         padding: 0 20px;
         color: #b7b7b7;
     }
+
+    .sample-video {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
 }
 
 .underline {
@@ -24,12 +30,13 @@
     // background-size: contain;
     // background-repeat: no-repeat;
     // background-position: center;
-    width: 100%;
-    max-width: 650px;
-    height: 33px;
+    // width: 100%;
+    // max-width: 650px;
+    // height: 33px;
     margin: auto;
     margin-bottom: 30px;
-    position: relative;
+    display: block;
+    // position: relative;
 }
 
 .sample-video {
