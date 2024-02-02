@@ -10,12 +10,18 @@
         margin: 35px auto 0;
         display: block;
     }
+
+    .product-image {
+        max-width: 650px;
+        margin: auto;
+        display: block;
+    }
 }
 
 .logo-container {
     background: #0e0e0e;
     width: 100%;
-    position: relative;
+    // position: relative;
     height: 270px;
     display: flex;
     justify-content: center;

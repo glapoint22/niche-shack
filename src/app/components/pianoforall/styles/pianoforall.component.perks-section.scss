@@ -1,3 +1,5 @@
+@import '../../../../styles/flexbox-grid';
+
 .perks-container {
     background: #2c2c2c;
     padding-top: 30px;
@@ -13,26 +15,28 @@
     .description {
         color: #afafaf;
         text-align: center;
-        margin-top: 5px;
+        margin: 5px 0 40px;
         padding: 0 10px;
     }
 }
 
 
 .perks-content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 1500px;
-    margin: 40px auto 0;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // width: 100%;
+    // max-width: 1500px;
+    // margin: 40px auto 0;
+
+    @include flex-grid((3, 2, 1), (1080px, 800px), 1500px, 30px);
 }
 
 .perk {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-    width: 100%;
-    padding: 20px;
+    // flex: 0 0 33.3333%;
+    // max-width: 33.3333%;
+    // width: 100%;
+    // padding: 20px;
 
     img {
         margin: auto;
@@ -53,25 +57,26 @@
 
     p {
         color: #adadad;
+        padding: 0 20px;
     }
 }
 
 
 
-@media (max-width: 1080px) {
-    .perk {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
+// @media (max-width: 1080px) {
+//     .perk {
+//         flex: 0 0 50%;
+//         max-width: 50%;
+//     }
+// }
 
 
-@media (max-width: 800px) {
-    .perk {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+// @media (max-width: 800px) {
+//     .perk {
+//         flex: 0 0 100%;
+//         max-width: 100%;
+//     }
+// }
 
 
 @media (max-width: 400px) {

@@ -40,6 +40,7 @@
         grid-row-end: span 3;
         margin-left: auto;
         margin-top: 28px;
+        max-width: 650px;
     }
 
     @media (max-width: 2560px) {
@@ -91,10 +92,9 @@
 
 
 
-    @media (max-width: 700px) {
+    @media (max-width: 650px) {
         .video-audio-image {
-            width: 100%;
-            height: 82vw;
+            width: 95vw;
             background-position: center;
         }
 

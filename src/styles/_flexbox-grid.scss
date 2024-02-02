@@ -1,0 +1,23 @@
+@mixin flex-grid($column-config, $breakpoints, $width, $margin-bottom) {
+    display: flex;
+    flex-wrap: wrap;
+
+    >* {
+        flex: 1 0 calc(100% / nth($column-config, 1));
+        margin-bottom: $margin-bottom;
+    }
+
+    @for $i from 2 through length($column-config) {
+        $columns: nth($column-config, $i);
+        $breakpoint: nth($breakpoints, $i - 1);
+
+        @media screen and (max-width: $breakpoint) {
+            >* {
+                flex: 1 0 calc(100% / #{$columns});
+            }
+        }
+    }
+
+    max-width: $width;
+    margin: auto;
+}

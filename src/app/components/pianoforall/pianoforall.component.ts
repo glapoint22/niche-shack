@@ -3,12 +3,11 @@ import { HeaderComponent } from './header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { VideoService } from '../../services/video/video.service';
-import { VideoComponent } from '../shared/video/video.component';
 
 @Component({
   selector: 'ns-pianoforall',
   standalone: true,
-  imports: [HeaderComponent, NgOptimizedImage, VideoComponent],
+  imports: [HeaderComponent, NgOptimizedImage],
   templateUrl: './pianoforall.component.html',
   styleUrls: [
     './styles/pianoforall.component.scss',

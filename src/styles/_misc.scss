@@ -7,8 +7,8 @@
     }
 }
 
-.video-image-container {
-    width: 100%;
+.video {
+    width: 95vw;
     max-width: 595px;
     cursor: pointer;
     position: relative;
@@ -21,10 +21,9 @@
         position: absolute;
     }
     
-
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         .youtube-play-button {
-            width: 20vw;
+            width: 12.5vw;
         }
     }
 }

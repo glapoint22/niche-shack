@@ -1,11 +1,9 @@
-#video-section {
+.video-section {
     $section-height: 650px;
 
-    .section-container {
-        width: 100%;
-        margin-top: 70px;
-        position: relative;
-    }
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
 
     .background-image {
         height: $section-height;
@@ -19,13 +17,9 @@
         top: 0;
     }
 
-    .left-flex {
-        flex: 1;
-    }
-
+    .left-flex,
     .right-flex {
         flex: 1;
-        // margin: 0 10px;
     }
 
     .content {
@@ -55,17 +49,6 @@
     }
 
 
-    // .video-image-container {
-    //     margin: auto;
-    // }
-
-
-    .pianoforall-logo {
-        // width: 100%;
-        height: auto;
-    }
-
-
 
     @media (max-width: 1080px) {
         .left-flex {
@@ -79,32 +62,18 @@
     }
 
 
-    @media (max-width: 615px) {
+    @media (max-width: 600px) {
         .content {
-            width: 100%;
+            width: 95vw;
             height: 106vw;
         }
-
-        // .pianoforall-logo {
-        //     width: 100%;
-        //     height: auto;
-        // }
 
         .discount-banner .text {
             font-size: 11vw;
         }
 
-        .pianoforall-video-thumbnail {
-            height: 53.056vw;
-        }
-
         .background-image {
             height: 106vw;
-        }
-
-        .youtube-button {
-            max-width: 13.01vw;
-            max-height: 9.106vw;
         }
     }
 }
