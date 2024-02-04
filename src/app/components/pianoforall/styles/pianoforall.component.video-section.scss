@@ -1,79 +1,91 @@
-.video-section {
-    $section-height: 650px;
+// @import '../../../../styles/flexbox-grid';
 
-    width: 100%;
-    margin-top: 70px;
-    position: relative;
+// .video-section {
+//     $section-height: 650px;
 
-    .background-image {
-        height: $section-height;
-    }
+//     width: 100%;
+//     // margin-top: 70px;
+//     position: relative;
 
-
-    .flex-container {
-        display: flex;
-        width: 100%;
-        position: absolute;
-        top: 0;
-    }
-
-    .left-flex,
-    .right-flex {
-        flex: 1;
-    }
-
-    .content {
-        width: 595px;
-        height: $section-height;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
-        padding: 10px 0;
-    }
-
-    .discount-banner {
-        width: 100%;
-        background: #981127;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-
-        .text {
-            font-weight: bold;
-            color: #fffcf4;
-            font-size: 68px;
-            white-space: nowrap;
-        }
-    }
+//     .background-image {
+//         height: $section-height;
+//     }
 
 
+//     .flex-container {
+//         display: flex;
+//         width: 100%;
+//         position: absolute;
+//         bottom: 110px;
+//     }
 
-    @media (max-width: 1080px) {
-        .left-flex {
-            display: none;
-        }
+//     .left-flex,
+//     .right-flex {
+//         flex: 1;
+//         font-size: 40px;
+//         margin-left: 110px;
+//     }
 
-        .right-flex {
-            display: flex;
-            justify-content: center;
-        }
-    }
+//     .text {
+//         color: #c5203b;
+//         margin-left: 100px;
+//         white-space: nowrap;
+//         padding-right: 10px;
+//     }
+    
 
 
-    @media (max-width: 600px) {
-        .content {
-            width: 95vw;
-            height: 106vw;
-        }
+//     @media (max-width: 900px) {
+//         .left-flex {
+//             display: none;
+//         }
 
-        .discount-banner .text {
-            font-size: 11vw;
-        }
+//         .right-flex {
+//             margin-left: 30vw;
+//         }
 
-        .background-image {
-            height: 106vw;
-        }
-    }
-}
+//         .text {
+//             white-space: unset;
+//             margin-left: unset;
+//             padding: 0 10px;
+//         }
+
+//         .background-image {
+//             height: 72vw;
+//         }
+
+//         .flex-container {
+//             bottom: unset;
+//             top: 10vw;
+//         }
+//     }
+
+
+//     @media (max-width: 520px) {
+
+
+//         .right-flex {
+
+//             font-size: 8vw;
+//         }
+//     }
+// }
+
+
+// .container {
+//     @include flex-grid((2, 1), (550px), 100%, 10px);
+// }
+
+// .underline {
+//     width: 100%;
+//     max-width: 900px;
+//     display: block;
+//     margin: auto;
+// }
+
+// @media (max-width: 945px) {
+//     .underline {
+//         max-width: unset;
+//         width: 95vw;
+//     }
+// }

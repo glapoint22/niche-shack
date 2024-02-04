@@ -1,4 +1,4 @@
 export const environment = {
-    imageUrl: 'http://localhost/images/',
+    imageUrl: 'http://localhost/getImage/',
     isDev: false
 };

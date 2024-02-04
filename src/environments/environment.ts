@@ -1,4 +1,4 @@
 export const environment = {
-    imageUrl: 'https://wwww.nicheshack.com/images/',
+    imageUrl: 'https://www.nicheshack.com/getImage/',
     isDev: false
 };

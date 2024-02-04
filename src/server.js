@@ -3,11 +3,11 @@ const path = require('path');
 const { access } = require('fs').promises;
 const compression = require('compression');
 const https = require('https');
-const http = require('http');
+// const http = require('http');
 const fs = require('fs');
 const config = require('config');
 const app = express();
-const portHttp = 80;
+// const portHttp = 80;
 const portHttps = 443;
 const rootDirectory = __dirname;
 
@@ -19,18 +19,18 @@ app.use(compression());
 
 
 // Redirect HTTP to HTTPS and enforce 'www' in the domain
-app.use(async (req, res, next) => {
-  const targetProtocol = 'https';
+// app.use(async (req, res, next) => {
+//   const targetProtocol = 'https';
 
-  if (req.headers['host'] != 'localhost') {
-    if (req.protocol !== targetProtocol || req.get('host') !== 'www') {
-      // Redirect to the specified protocol and 'www' subdomain
-      return res.redirect(`${targetProtocol}://www.${req.get('host')}${req.url}`);
-    }
-  }
+//   if (req.headers['host'] != 'localhost') {
+//     if (req.protocol !== targetProtocol || req.get('host') !== 'www') {
+//       // Redirect to the specified protocol and 'www' subdomain
+//       return res.redirect(`${targetProtocol}://www.${req.get('host')}${req.url}`);
+//     }
+//   }
 
-  next();
-});
+//   next();
+// });
 
 
 
@@ -43,22 +43,23 @@ app.use(express.static(rootDirectory, {
 
 
 
-app.get('/images/:img', (req, res) => {
+app.get('/getImage/:img', (req, res) => {
   const width = req.query.w;
   const acceptHeader = req.headers['accept'];
   const imagePath = path.join(rootDirectory, 'images');
-  let image = req.params.img;
+  let image = req.params.img.replace(/(\..+)/, '');
   let imageType = '';
 
   if (acceptHeader.includes('image/avif')) {
     imageType = 'avif';
-  } else if (acceptHeader.includes('image/webp')) {
+  } else 
+  if (acceptHeader.includes('image/webp')) {
     imageType = 'webp';
   } else {
     imageType = 'png';
   }
 
-  if (width && width != 1920) image += '-' + width;
+  if (width) image += '-' + width;
 
 
   // Set the Content-Type header
@@ -100,13 +101,13 @@ const httpsOptions = {
 };
 
 // // Create both HTTP and HTTPS servers with domain binding
-const httpServer = http.createServer(app);
+// const httpServer = http.createServer(app);
 const httpsServer = https.createServer(httpsOptions, app);
 
 // Listen for HTTP requests on port 80
-httpServer.listen(portHttp, () => {
-  console.log(`HTTP Server is running on http://localhost:${portHttp}`);
-});
+// httpServer.listen(portHttp, () => {
+//   console.log(`HTTP Server is running on http://localhost:${portHttp}`);
+// });
 
 // Listen for HTTPS requests on port 443
 httpsServer.listen(portHttps, () => {

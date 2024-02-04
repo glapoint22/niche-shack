@@ -11,7 +11,7 @@ export const PIANOFORALL_ROUTES: Routes = [{
                 title: 'Pianoforall',
                 description: 'Pianoforall is recognized as one of the best online piano courses in the world, having transformed the musical journeys of over 450,000 users for more than a decade.',
                 url: 'pianoforall',
-                image: 'pianoforall/pianoforall-product.avif'
+                // image: 'pianoforall/pianoforall-product.avif'
             }
         },
         {
