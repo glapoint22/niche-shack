@@ -1,210 +1,210 @@
-@import '../../../../styles/flexbox-grid';
+// @import '../../../../styles/flexbox-grid';
 
-.background-image-container {
-    width: 100%;
-    position: relative;
-}
-
-
-.container {
-    @include flex-grid((2, 1), (550px), 100%, 10px);
-}
-
-.underline {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: auto;
-}
+// .background-image-container {
+//     width: 100%;
+//     position: relative;
+// }
 
 
-.background-image {
-    height: 650px;
-}
+// .container {
+//     @include flex-grid((2, 1), (550px), 100%, 10px);
+// }
+
+// .underline {
+//     width: 100%;
+//     max-width: 900px;
+//     display: block;
+//     margin: auto;
+// }
 
 
-.flex-container {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    bottom: 110px;
-}
-
-.left-flex,
-.right-flex {
-    flex: 1;
-    font-size: 40px;
-    margin-left: 110px;
-}
-
-.want-to-learn-text {
-    color: white;
-}
-
-.how-to-play-text {
-    color: #c5203b;
-    margin-left: 100px;
-    white-space: nowrap;
-    padding-right: 10px;
-
-    span {
-        color: white;
-    }
-}
+// .background-image {
+//     height: 650px;
+// }
 
 
-.learn-conainer {
-    width: 100%;
-    max-width: 555px;
-    margin: auto;
-    margin-top: 40px;
-    padding: 0 20px;
-}
+// .flex-container {
+//     display: flex;
+//     width: 100%;
+//     position: absolute;
+//     bottom: 110px;
+// }
+
+// .left-flex,
+// .right-flex {
+//     flex: 1;
+//     font-size: 40px;
+//     margin-left: 110px;
+// }
+
+// .want-to-learn-text {
+//     color: white;
+// }
+
+// .how-to-play-text {
+//     color: #c5203b;
+//     margin-left: 100px;
+//     white-space: nowrap;
+//     padding-right: 10px;
+
+//     span {
+//         color: white;
+//     }
+// }
 
 
-.learn-text {
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.check-mark {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
+// .learn-conainer {
+//     width: 100%;
+//     max-width: 555px;
+//     margin: auto;
+//     margin-top: 40px;
+//     padding: 0 20px;
+// }
 
 
-.piano-lessons {
-    text-align: center;
-    color: #373737;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 40px;
-    padding: 0 20px;
-}
+// .learn-text {
+//     margin-bottom: 20px;
+//     font-weight: bold;
+// }
+
+// .check-mark {
+//     width: 16px;
+//     height: 16px;
+//     margin-right: 5px;
+// }
 
 
-.learn-piano {
-    text-align: center;
-    color: #981127;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.heading {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 20px;
-
-    span {
-        color: #981127;
-    }
-}
+// .piano-lessons {
+//     text-align: center;
+//     color: #373737;
+//     font-size: 36px;
+//     font-weight: bold;
+//     margin-top: 40px;
+//     padding: 0 20px;
+// }
 
 
-.click-button-text {
-    text-align: center;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    font-style: italic;
-}
+// .learn-piano {
+//     text-align: center;
+//     color: #981127;
+//     font-size: 18px;
+//     font-style: italic;
+//     font-weight: bold;
+// }
+
+// .heading {
+//     font-size: 50px;
+//     font-weight: bold;
+//     text-align: center;
+//     padding: 0 20px;
+//     margin-top: 20px;
+
+//     span {
+//         color: #981127;
+//     }
+// }
 
 
-button {
-    width: 100%;
-    max-width: 306px;
-    background: #981127;
-    font-size: 28px;
-    color: white;
-    padding: 21px 0;
-    margin: auto;
-    display: block;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
+// .click-button-text {
+//     text-align: center;
+//     padding: 0 20px;
+//     margin-bottom: 20px;
+//     font-style: italic;
+// }
 
 
-
-@media (max-width: 945px) {
-    .underline {
-        max-width: unset;
-        width: 95vw;
-    }
-}
+// button {
+//     width: 100%;
+//     max-width: 306px;
+//     background: #981127;
+//     font-size: 28px;
+//     color: white;
+//     padding: 21px 0;
+//     margin: auto;
+//     display: block;
+//     font-weight: bold;
+//     border-radius: 5px;
+//     margin-bottom: 20px;
+// }
 
 
 
-@media (max-width: 900px) {
-    .left-flex {
-        display: none;
-    }
-
-    .right-flex {
-        margin-left: 30vw;
-    }
-
-    .how-to-play-text {
-        white-space: unset;
-        margin-left: unset;
-        padding: 0 10px;
-    }
-
-    .background-image {
-        height: 72vw;
-    }
-
-    .flex-container {
-        bottom: unset;
-        top: 10vw;
-    }
-}
+// @media (max-width: 945px) {
+//     .underline {
+//         max-width: unset;
+//         width: 95vw;
+//     }
+// }
 
 
-@media (max-width: 520px) {
-    .right-flex {
-        font-size: 9vw;
-    }
 
-    .heading {
-        font-size: 40px;
-    }
+// @media (max-width: 900px) {
+//     .left-flex {
+//         display: none;
+//     }
 
-    .piano-lessons {
-        font-size: 26px;
-    }
-}
+//     .right-flex {
+//         margin-left: 30vw;
+//     }
 
+//     .how-to-play-text {
+//         white-space: unset;
+//         margin-left: unset;
+//         padding: 0 10px;
+//     }
 
-@media (max-width: 330px) {
-    button {
-        width: 95vw;
-        font-size: 8.5vw;
-        padding: 6.5vw 0;
-    }
+//     .background-image {
+//         height: 72vw;
+//     }
 
-
-    .heading {
-        font-size: 12vw;
-    }
-
-    .piano-lessons {
-        font-size: 8vw;
-    }
-
-    .learn-piano {
-        font-size: 5.5vw;
-    }
+//     .flex-container {
+//         bottom: unset;
+//         top: 10vw;
+//     }
+// }
 
 
-    .learn-conainer {
-        font-size: 5.5vw;
-    }
+// @media (max-width: 520px) {
+//     .right-flex {
+//         font-size: 9vw;
+//     }
 
-    .click-button-text {
-        font-size: 5.5vw;
-    }
-}
+//     .heading {
+//         font-size: 40px;
+//     }
+
+//     .piano-lessons {
+//         font-size: 26px;
+//     }
+// }
+
+
+// @media (max-width: 330px) {
+//     button {
+//         width: 95vw;
+//         font-size: 8.5vw;
+//         padding: 6.5vw 0;
+//     }
+
+
+//     .heading {
+//         font-size: 12vw;
+//     }
+
+//     .piano-lessons {
+//         font-size: 10vw;
+//     }
+
+//     .learn-piano {
+//         font-size: 7vw;
+//     }
+
+
+//     .learn-conainer {
+//         font-size: 5.5vw;
+//     }
+
+//     .click-button-text {
+//         font-size: 5.5vw;
+//     }
+// }

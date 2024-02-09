@@ -30,5 +30,25 @@ export const routes: Routes = [
     data: {
       hoplink: 'https://b9f83kven3xt8m8co5uaa3xham.hop.clickbank.net'
     }
+  },
+
+  {
+    path: 'tedswoodworking/:id',
+    loadComponent: () => import('./components/teds-woodworking/teds-woodworking.component').then(m => m.TedsWoodworkingComponent),
+    data: {
+      title: 'Ted\'s Woodworking',
+      description: '',
+      url: ''
+    }
+  },
+
+  {
+    path: 'tedswoodworking',
+    loadComponent: () => import('./components/teds-woodworking/teds-woodworking.component').then(m => m.TedsWoodworkingComponent),
+    data: {
+      title: 'Ted\'s Woodworking',
+      description: '',
+      url: ''
+    }
   }
 ];

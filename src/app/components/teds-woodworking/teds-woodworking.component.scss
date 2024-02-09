@@ -1,0 +1,6 @@
+@import '../../../styles/flexbox-grid';
+
+
+.flex-container {
+    @include flex-grid(5, (1024px, 768px, 600px, 360px), 1500px);
+}

@@ -3,11 +3,11 @@ const path = require('path');
 const { access } = require('fs').promises;
 const compression = require('compression');
 const https = require('https');
-// const http = require('http');
+const http = require('http');
 const fs = require('fs');
 const config = require('config');
 const app = express();
-// const portHttp = 80;
+const portHttp = 80;
 const portHttps = 443;
 const rootDirectory = __dirname;
 
@@ -101,13 +101,13 @@ const httpsOptions = {
 };
 
 // // Create both HTTP and HTTPS servers with domain binding
-// const httpServer = http.createServer(app);
+const httpServer = http.createServer(app);
 const httpsServer = https.createServer(httpsOptions, app);
 
 // Listen for HTTP requests on port 80
-// httpServer.listen(portHttp, () => {
-//   console.log(`HTTP Server is running on http://localhost:${portHttp}`);
-// });
+httpServer.listen(portHttp, () => {
+  console.log(`HTTP Server is running on http://localhost:${portHttp}`);
+});
 
 // Listen for HTTPS requests on port 443
 httpsServer.listen(portHttps, () => {

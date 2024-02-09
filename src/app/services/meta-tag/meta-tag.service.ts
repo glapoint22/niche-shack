@@ -48,8 +48,8 @@ export class MetaTagService {
 
     // Image
     if (pageData.image) {
-      this.metaService.addTag({ property: 'og:image', content: nicheShackUrl + 'assets/' + pageData.image });
-      this.metaService.addTag({ name: 'twitter:image', content: nicheShackUrl + 'assets/' + pageData.image });
+      this.metaService.addTag({ property: 'og:image', content: nicheShackUrl + 'images/' + pageData.image });
+      this.metaService.addTag({ name: 'twitter:image', content: nicheShackUrl + 'images/' + pageData.image });
     }
   }
 }
