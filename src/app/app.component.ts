@@ -1,7 +1,6 @@
-import { Component, ViewContainerRef, afterNextRender, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule, IMAGE_LOADER, ImageLoaderConfig, ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { VideoService } from './services/video/video.service';
 import { MetaTagService } from './services/meta-tag/meta-tag.service';
 import { PageData } from './models/page-data';
 import { environment } from '../environments/environment';
@@ -31,21 +30,13 @@ import { environment } from '../environments/environment';
   ]
 })
 export class AppComponent {
-  private containerRef = inject(ViewContainerRef);
-  private videoService = inject(VideoService);
   private router = inject(Router);
   private metaTagService = inject(MetaTagService);
   private viewportScroller = inject(ViewportScroller);
 
-  constructor() {
-    afterNextRender(() => {
-      this.videoService.initializeYouTube();
-    });
-  }
+  
 
   ngOnInit() {
-    this.videoService.setContainerRef(this.containerRef);
-
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         // Get the current activated route

@@ -3,7 +3,7 @@
 /tedswoodworking/bee-hive-plans
 /tedswoodworking/bird-feeder-plans
 /tedswoodworking/bird-house-plans
-/tedswoodworking/book-case-plans
+/tedswoodworking/bookcase-plans
 /tedswoodworking/cabin-plans
 /tedswoodworking/cabinet-plans
 /tedswoodworking/carport-plans

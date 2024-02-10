@@ -1,135 +1,148 @@
-<div style="width: 100%; height: 50px; background: white;">
-    <button>Learn More</button>
+<div class="header">
+    <div class="button-container">
+        <button>Learn More</button>
+    </div>
 </div>
 
-<div style=" width: 100%; background: #e4ded8; padding: 20px;">
-    <div style="width: 100%; max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 50px;">
-        <div style="grid-column: 1;">{{heading}}</div>
-        <img src="images/plans1.png" style="grid-column: 2; grid-row-end: span 2;">
+<div class="top-section">
+    <div class="content-container">
+        <div class="heading">{{heading}}</div>
 
-        <div style="grid-column: 1;">
-            <div *ngIf="param && param !== 'easy-wood-projects' && param !== 'woodworking-plans' && !isDefault">You’ve come to the right place. Explore a collection of over 16,000 woodworking plans, featuring detailed {{item}} plans and much more!</div>
-        
-            <div *ngIf="param && param === 'easy-wood-projects' && !isDefault">You’ve come to the right place. Discover over 16,000 woodworking plans and find easy DIY ideas to create beautiful pieces with ease.</div>
+        <img class="plans1" ngSrc="plans1.png" width="560" height="342">
 
-            <div *ngIf="!param || param === 'woodworking-plans' || isDefault">You get over 16,000 ready-made plans with clear instructions and easy-to-follow blueprints, making even the toughest projects super easy.</div>
-            
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>It doesn’t matter what your current skill level is</span>
+        <div class="column1">
+            <div class="text"
+                *ngIf="param && param !== 'easy-wood-projects' && param !== 'woodworking-plans' && !isDefault">You’ve
+                come to the right place. Explore a collection of over 16,000 woodworking plans, featuring detailed
+                <strong>{{item}} plans</strong> and much more!
             </div>
 
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>It doesn’t matter what your budget is</span>
-            </div>
+            <div class="text" *ngIf="param && param === 'easy-wood-projects' && !isDefault">You’ve come to the right
+                place. Discover over 16,000 woodworking plans and find easy DIY ideas to create beautiful pieces with
+                ease.</div>
+
+            <div class="text" *ngIf="!param || param === 'woodworking-plans' || isDefault">You get over 16,000
+                ready-made plans with clear instructions and easy-to-follow blueprints, making even the toughest
+                projects super easy.</div>
 
 
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>And it doesn’t matter if you don’t have a full-scale shop</span>
+            <div class="list">
+                <div class="list-item">
+                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <div>It <span style="text-decoration: underline;">doesn’t</span> matter what your current
+                        <strong>skill level</strong> is
+                    </div>
+                </div>
+
+
+                <div class="list-item">
+                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <div>It <span style="text-decoration: underline;">doesn’t</span> matter what your
+                        <strong>budget</strong> is
+                    </div>
+                </div>
+
+
+                <div class="list-item">
+                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <div>It <span style="text-decoration: underline;">doesn’t</span> matter if you don’t have a
+                        <strong>full-scale shop</strong>
+                    </div>
+                </div>
             </div>
 
             <button>Learn More</button>
         </div>
-    
-        
-        
     </div>
 </div>
 
-<div class="flex-container">
-    <div>
-        <!-- <div style="width: 80px; height: 80px; background: #f3eeea; border-radius: 50%; margin: auto"></div> -->
-        <img src="images/instructions-icon.png" style="width: 65px; display: block; margin: auto;">
-        <div style="text-align: center; font-weight: bold; width: 100%; max-width: 110px; margin: auto;">Step By Step Instructions</div>
-
-        <div style="width: 100%; max-width: 300px; margin: auto; text-align: center;">Experience the ease of constructing your {{item}} with step-by-step A to Z instructions, ensuring a swift, enjoyable building process.</div>
-        
-    </div>
-
-
-    <div>
-        <!-- <div style="width: 80px; height: 80px; background: #f3eeea; border-radius: 50%; margin: auto"></div> -->
-        <img src="images/materials-list-icon.png" style="width: 65px; display: block; margin: auto;">
-        <div style="text-align: center; font-weight: bold; width: 100%; max-width: 110px; margin: auto;">Cutting & Materials Lists</div>
-
-        <div style="width: 100%; max-width: 300px; margin: auto; text-align: center;">Get precise cutting and materials lists for your {{item}} to ensure you buy the right amounts and avoid unnecessary expenses.</div>
-    </div>
-
-
-    <div>
-        <!-- <div style="width: 80px; height: 80px; background: #f3eeea; border-radius: 50%; margin: auto"></div> -->
-        <img src="images/schematics-icon.png" style="width: 65px; display: block; margin: auto;">
-        <div style="text-align: center; font-weight: bold; width: 100%; max-width: 110px; margin: auto;">Detailed Schematics</div>
-
-        <div style="width: 100%; max-width: 300px; margin: auto; text-align: center;">You get detailed schematics that practically guide your project to assemble itself, enabling you to complete your {{item}} in a fraction of the time.</div>
-    </div>
-
-
-    <div>
-        <div style="width: 80px; height: 80px; background: #f3eeea; border-radius: 50%; margin: auto"></div>
-        <div style="text-align: center; font-weight: bold; width: 100%; max-width: 110px; margin: auto;">Multiple Views From All Angles</div>
-
-        <div style="width: 100%; max-width: 300px; margin: auto; text-align: center;">Gain confidence before starting your {{item}} by examining detailed visualizations showcasing every angle, corner, and joint.</div>
-    </div>
-
-
-    <div>
-        <div style="width: 80px; height: 80px; background: #f3eeea; border-radius: 50%; margin: auto"></div>
-        <div style="text-align: center; font-weight: bold; width: 100%; max-width: 110px; margin: auto;">Suitable for Beginners & Pros</div>
-
-        <div style="width: 100%; max-width: 300px; margin: auto; text-align: center;">These {{item}} plans are thoughtfully crafted to embrace individuals of varying skill levels, ensuring success for beginners and seasoned professionals alike.</div>
-    </div>
-    
-    
-</div>
 
 
 
-<div style="background: #ededed; width: 100%;">
-    <div style="width: 100%; max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 50px;">
-        <img src="images/plans2.png" style="grid-column: 1; grid-row-end: span 2; max-width: 350px; width: 100%;">
-        
-        
-        
 
-        <div style="grid-column: 2;">
-            <div>Make Any Project Easy and Hassle-Free!</div>
+<div class="mid-section">
+    <div class="heading">Here’s Why These {{item}} Plans Are So Amazing</div>
 
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>You get a unique package that guides you through the project with easy-to-follow steps.</span>
-            </div>
-
-
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>Receive ready-made blueprints and plans for more than 16,000 projects.</span>
-            </div>
-
-
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>Enjoy a lifetime supply of monthly free plans with your purchase, ensuring a continuous stream of projects and ideas!</span>
-            </div>
-
-
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>Request tailor-made woodworking plans for your unique and challenging project.</span>
-            </div>
-
-            <div>
-                <img src="images/check-mark.avif" style="width: 16px;">
-                <span>Finish any project swiftly, affordably, and achieve professional results every single time.</span>
-            </div>
-
+    <div class="flex-container">
+        <div>
+            <img src="images/instructions-icon.png">
+            <div>Step By Step Instructions</div>
+            <div>Experience the ease of constructing your {{item}} with step-by-step A to Z instructions, ensuring a
+                swift, enjoyable building process.</div>
         </div>
-    
-        
-        
+
+
+        <div>
+            <img src="images/materials-list-icon.png">
+            <div>Cutting & Materials Lists</div>
+            <div>Get precise cutting and materials lists for your {{item}} to ensure you buy the right amounts and avoid
+                unnecessary expenses.</div>
+        </div>
+
+
+        <div>
+            <img src="images/schematics-icon.png">
+            <div>Detailed Schematics</div>
+            <div>You get detailed schematics that practically guide your project to assemble itself, enabling you to
+                complete your {{item}} in a fraction of the time.</div>
+        </div>
+
+
+        <div>
+            <img src="images/multiple-views-icon.png">
+            <div>Multiple Views From All Angles</div>
+            <div>Gain confidence before starting your {{item}} by examining detailed visualizations showcasing every
+                angle, corner, and joint.</div>
+        </div>
+
+
+        <div>
+            <img src="images/beginners-pros-icon.png">
+            <div>Suitable for Beginners & Pros</div>
+            <div>These {{item}} plans are thoughtfully crafted to embrace individuals of varying skill levels, ensuring
+                success for beginners and seasoned professionals alike.</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div style="background: #ededed; width: 100%; padding: 20px;">
+    <div style="width: 100%; max-width: 1000px; margin: auto; display: grid; grid-template-columns: 1fr 1fr;">
+        <img ngSrc="plans2.png" style="grid-column: 1; grid-row-end: span 2; max-width: 380px; width: 100%; display: block; margin: auto;" width="380" height="356">
+
+        <div style="grid-column: 2; font-size: 24px; font-weight: bold; margin-bottom: 20px;">Make Any Project Easy and Hassle-Free!</div>
+
+        <div class="list" style="grid-column: 2;">
+            <div class="list-item">
+                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <div>You get a unique package that guides you through the project with easy-to-follow steps.</div>
+            </div>
+
+
+            <div class="list-item">
+                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <div>Receive ready-made blueprints and plans for more than 16,000 projects.</div>
+            </div>
+
+
+            <div class="list-item">
+                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <div>Enjoy a lifetime supply of monthly free plans with your purchase, ensuring a continuous stream of projects and ideas!</div>
+            </div>
+
+
+            <div class="list-item">
+                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <div>Request tailor-made woodworking plans for your unique and challenging project.</div>
+            </div>
+
+
+            <div class="list-item">
+                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <div>Finish any project swiftly, affordably, and achieve professional results every single time.</div>
+            </div>
+        </div>
     </div>
 
-    <button>Learn More</button>
-</div>
+    <button style="margin: auto; display: block; margin-top: 10px;">Learn More</button>
+</div> -->
