@@ -3,7 +3,7 @@ import { CommonModule, IMAGE_LOADER, ImageLoaderConfig, ViewportScroller } from 
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MetaTagService } from './services/meta-tag/meta-tag.service';
 import { PageData } from './models/page-data';
-import { environment } from '../environments/environment';
+// import { environment } from '../environments/environment';
 
 @Component({
   selector: 'ns-root',
@@ -11,23 +11,23 @@ import { environment } from '../environments/environment';
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  providers: [
-    {
-      provide: IMAGE_LOADER,
-      useValue: (config: ImageLoaderConfig) => {
-        const imagePath = environment.imageUrl + config.src;
+  // providers: [
+  //   {
+  //     provide: IMAGE_LOADER,
+  //     useValue: (config: ImageLoaderConfig) => {
+  //       const imagePath = environment.imageUrl + config.src;
 
-        if (environment.isDev) return imagePath;
-        let image = '';
+  //       if (environment.isDev) return imagePath;
+  //       let image = '';
 
-        if (config.width) {
-          image = imagePath + '?w=' + config.width;
-        }
+  //       if (config.width) {
+  //         image = environment.imageUrl + config.src.replace(/(\..+)/, '') + '-' + config.width + '.avif';
+  //       }
 
-        return image;
-      },
-    },
-  ]
+  //       return image;
+  //     },
+  //   },
+  // ]
 })
 export class AppComponent {
   private router = inject(Router);

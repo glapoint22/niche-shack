@@ -3,11 +3,11 @@ const path = require('path');
 const { access } = require('fs').promises;
 const compression = require('compression');
 const https = require('https');
-const http = require('http');
+// const http = require('http');
 const fs = require('fs');
 const config = require('config');
 const app = express();
-const portHttp = 80;
+// const portHttp = 80;
 const portHttps = 443;
 const rootDirectory = __dirname;
 
@@ -43,37 +43,37 @@ app.use(express.static(rootDirectory, {
 
 
 
-app.get('/getImage/:img', (req, res) => {
-  const width = req.query.w;
-  const acceptHeader = req.headers['accept'];
-  const imagePath = path.join(rootDirectory, 'images');
-  let image = req.params.img.replace(/(\..+)/, '');
-  let imageType = '';
+// app.get('/getImage/:img', (req, res) => {
+//   const width = req.query.w;
+//   const acceptHeader = req.headers['accept'];
+//   const imagePath = path.join(rootDirectory, 'images');
+//   let image = req.params.img.replace(/(\..+)/, '');
+//   let imageType = '';
 
-  if (acceptHeader.includes('image/avif')) {
-    imageType = 'avif';
-  } else 
-  if (acceptHeader.includes('image/webp')) {
-    imageType = 'webp';
-  } else {
-    imageType = 'png';
-  }
+//   if (acceptHeader.includes('image/avif')) {
+//     imageType = 'avif';
+//   } else 
+//   if (acceptHeader.includes('image/webp')) {
+//     imageType = 'webp';
+//   } else {
+//     imageType = 'png';
+//   }
 
-  if (width) image += '-' + width;
+//   if (width) image += '-' + width;
 
 
-  // Set the Content-Type header
-  res.header('Content-Type', 'image/' + imageType);
+//   // Set the Content-Type header
+//   res.header('Content-Type', 'image/' + imageType);
 
-  // Set the Content-Disposition header to 'inline' for displaying in the browser
-  res.header('Content-Disposition', 'inline');
+//   // Set the Content-Disposition header to 'inline' for displaying in the browser
+//   res.header('Content-Disposition', 'inline');
 
-  // Set the Cache-Control header to allow caching
-  res.header('Cache-Control', 'public, max-age=86400'); // Cache for 24 hours, adjust as needed
+//   // Set the Cache-Control header to allow caching
+//   res.header('Cache-Control', 'public, max-age=86400'); // Cache for 24 hours, adjust as needed
 
   
-  res.sendFile(path.join(imagePath, image + '.' + imageType));
-});
+//   res.sendFile(path.join(imagePath, image + '.' + imageType));
+// });
 
 
 
@@ -101,13 +101,13 @@ const httpsOptions = {
 };
 
 // // Create both HTTP and HTTPS servers with domain binding
-const httpServer = http.createServer(app);
+// const httpServer = http.createServer(app);
 const httpsServer = https.createServer(httpsOptions, app);
 
 // Listen for HTTP requests on port 80
-httpServer.listen(portHttp, () => {
-  console.log(`HTTP Server is running on http://localhost:${portHttp}`);
-});
+// httpServer.listen(portHttp, () => {
+//   console.log(`HTTP Server is running on http://localhost:${portHttp}`);
+// });
 
 // Listen for HTTPS requests on port 443
 httpsServer.listen(portHttps, () => {

@@ -1,20 +1,23 @@
 <div class="header">
     <div class="button-container">
-        <button>Learn More</button>
+        <a [href]="hoplink">
+            <button>Learn More</button>
+        </a>
+
     </div>
 </div>
 
 <div class="top-section">
-    <div class="content-container">
+    <div class="grid">
         <div class="heading">{{heading}}</div>
 
-        <img class="plans1" ngSrc="plans1.png" width="560" height="342">
+        <!-- <img *ngIf="!isDefault" class="plans" ngSrc="plans1.png" width="560" height="342" priority ngSrcset="360w, 560w"> -->
+        <!-- <img *ngIf="isDefault" class="ted" ngSrc="ted.png" width="307" height="398" priority ngSrcset="307w, 603w"> -->
 
         <div class="column1">
             <div class="text"
                 *ngIf="param && param !== 'easy-wood-projects' && param !== 'woodworking-plans' && !isDefault">You’ve
-                come to the right place. Explore a collection of over 16,000 woodworking plans, featuring detailed
-                <strong>{{item}} plans</strong> and much more!
+                come to the right place. Transform your vision into reality with meticulously crafted <strong>{{item}} plans</strong>, designed to guide you seamlessly through each step of the process.
             </div>
 
             <div class="text" *ngIf="param && param === 'easy-wood-projects' && !isDefault">You’ve come to the right
@@ -28,7 +31,7 @@
 
             <div class="list">
                 <div class="list-item">
-                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                     <div>It <span style="text-decoration: underline;">doesn’t</span> matter what your current
                         <strong>skill level</strong> is
                     </div>
@@ -36,7 +39,7 @@
 
 
                 <div class="list-item">
-                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                     <div>It <span style="text-decoration: underline;">doesn’t</span> matter what your
                         <strong>budget</strong> is
                     </div>
@@ -44,14 +47,16 @@
 
 
                 <div class="list-item">
-                    <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                    <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                     <div>It <span style="text-decoration: underline;">doesn’t</span> matter if you don’t have a
                         <strong>full-scale shop</strong>
                     </div>
                 </div>
             </div>
 
-            <button>Learn More</button>
+            <a [href]="hoplink">
+                <button>Learn More</button>
+            </a>
         </div>
     </div>
 </div>
@@ -61,11 +66,11 @@
 
 
 <div class="mid-section">
-    <div class="heading">Here’s Why These {{item}} Plans Are So Amazing</div>
+    <div class="heading">Here’s Why These {{upperCaseItem}} Plans Are So Amazing</div>
 
     <div class="flex-container">
         <div>
-            <img src="images/instructions-icon.png">
+            <img src="images/instructions-icon.avif" loading="lazy" fetchpriority="auto">
             <div>Step By Step Instructions</div>
             <div>Experience the ease of constructing your {{item}} with step-by-step A to Z instructions, ensuring a
                 swift, enjoyable building process.</div>
@@ -73,7 +78,7 @@
 
 
         <div>
-            <img src="images/materials-list-icon.png">
+            <img src="images/materials-list-icon.avif" loading="lazy" fetchpriority="auto">
             <div>Cutting & Materials Lists</div>
             <div>Get precise cutting and materials lists for your {{item}} to ensure you buy the right amounts and avoid
                 unnecessary expenses.</div>
@@ -81,7 +86,7 @@
 
 
         <div>
-            <img src="images/schematics-icon.png">
+            <img src="images/schematics-icon.avif" loading="lazy" fetchpriority="auto">
             <div>Detailed Schematics</div>
             <div>You get detailed schematics that practically guide your project to assemble itself, enabling you to
                 complete your {{item}} in a fraction of the time.</div>
@@ -89,7 +94,7 @@
 
 
         <div>
-            <img src="images/multiple-views-icon.png">
+            <img src="images/multiple-views-icon.avif" loading="lazy" fetchpriority="auto">
             <div>Multiple Views From All Angles</div>
             <div>Gain confidence before starting your {{item}} by examining detailed visualizations showcasing every
                 angle, corner, and joint.</div>
@@ -97,52 +102,62 @@
 
 
         <div>
-            <img src="images/beginners-pros-icon.png">
+            <img src="images/beginners-pros-icon.avif" loading="lazy" fetchpriority="auto">
             <div>Suitable for Beginners & Pros</div>
             <div>These {{item}} plans are thoughtfully crafted to embrace individuals of varying skill levels, ensuring
                 success for beginners and seasoned professionals alike.</div>
         </div>
     </div>
+
+    <a [href]="hoplink">
+        <button>Learn More</button>
+    </a>
 </div>
 
 
-<!-- <div style="background: #ededed; width: 100%; padding: 20px;">
-    <div style="width: 100%; max-width: 1000px; margin: auto; display: grid; grid-template-columns: 1fr 1fr;">
-        <img ngSrc="plans2.png" style="grid-column: 1; grid-row-end: span 2; max-width: 380px; width: 100%; display: block; margin: auto;" width="380" height="356">
 
-        <div style="grid-column: 2; font-size: 24px; font-weight: bold; margin-bottom: 20px;">Make Any Project Easy and Hassle-Free!</div>
 
-        <div class="list" style="grid-column: 2;">
+
+<!-- <div class="bottom-section">
+    <div class="grid">
+        <img src="images/plans2.avif" class="plans" loading="lazy" fetchpriority="auto">
+
+        <div class="heading">Make Any Project Easy and Hassle-Free!</div>
+
+        <div class="list">
             <div class="list-item">
-                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                 <div>You get a unique package that guides you through the project with easy-to-follow steps.</div>
             </div>
 
 
             <div class="list-item">
-                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                 <div>Receive ready-made blueprints and plans for more than 16,000 projects.</div>
             </div>
 
 
             <div class="list-item">
-                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
-                <div>Enjoy a lifetime supply of monthly free plans with your purchase, ensuring a continuous stream of projects and ideas!</div>
+                <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
+                <div>Enjoy a lifetime supply of monthly free plans with your purchase, ensuring a continuous stream of
+                    projects and ideas!</div>
             </div>
 
 
             <div class="list-item">
-                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                 <div>Request tailor-made woodworking plans for your unique and challenging project.</div>
             </div>
 
 
             <div class="list-item">
-                <img ngSrc="check-mark.png" width="16" height="12" disableOptimizedSrcset>
+                <img src="images/check-mark.avif" loading="lazy" fetchpriority="auto">
                 <div>Finish any project swiftly, affordably, and achieve professional results every single time.</div>
             </div>
         </div>
     </div>
 
-    <button style="margin: auto; display: block; margin-top: 10px;">Learn More</button>
+    <a [href]="hoplink">
+        <button>Learn More</button>
+    </a>
 </div> -->
