@@ -15,20 +15,9 @@ export const routes: Routes = [
   {
     path: 'tedswoodworking/:id',
     loadComponent: () => import('./components/teds-woodworking/teds-woodworking.component').then(m => m.TedsWoodworkingComponent),
-    data: {
-      title: 'Ted\'s Woodworking',
-      description: '',
-      url: ''
-    }
   },
-
   {
-    path: 'tedswoodworking',
-    loadComponent: () => import('./components/teds-woodworking/teds-woodworking.component').then(m => m.TedsWoodworkingComponent),
-    data: {
-      title: 'Ted\'s Woodworking',
-      description: '',
-      url: ''
-    }
+    path: 'paidonlinewritingjobs/:id',
+    loadComponent: () => import('./components/paid-online-writing-jobs/paid-online-writing-jobs.component').then(m => m.PaidOnlineWritingJobsComponent),
   }
 ];
