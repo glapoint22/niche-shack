@@ -5,7 +5,7 @@
 
 .grid {
     display: grid;
-    grid-template-rows: 200px;
+    grid-template-rows: 145px;
     padding: 80px 20px;
     width: 100%;
     max-width: 1120px;
@@ -17,22 +17,34 @@
     margin-top: 50px;
     color: white;
     font-weight: bold;
-    font-size: 60px;
+
+
 }
 
-a {
-    button {
-        width: 100%;
-        max-width: 237px;
-        font-size: 24px;
-        background: #fd7a2a;
-        padding: 12px 10px;
-        border-radius: 27px;
-        color: white;
-        font-weight: bold;
-        margin-top: 20px;
-    }
+
+.heading1 {
+    font-size: 45px;
 }
+
+.heading2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+button {
+    width: 100%;
+    max-width: 237px;
+    font-size: 24px;
+    background: #fd7a2a;
+    padding: 12px 10px;
+    border-radius: 27px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 
 
 
@@ -68,6 +80,14 @@ img {
     .heading-container {
         margin-top: unset;
     }
+
+    .text {
+        max-width: unset;
+    }
+
+    button {
+        max-width: unset;
+    }
 }
 
 
@@ -80,5 +100,19 @@ img {
 @media screen and (max-width: 240px) {
     .grid {
         padding: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 220px) {
+    .heading1 {
+        font-size: 18px;
+    }
+
+    .heading2 {
+        font-size: 16px;
+        font-weight: normal;
     }
 }

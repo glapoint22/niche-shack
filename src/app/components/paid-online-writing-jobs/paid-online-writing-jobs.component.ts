@@ -16,7 +16,6 @@ export class PaidOnlineWritingJobsComponent {
   protected hoplink!: string;
   private metaTagService = inject(MetaTagService);
   protected header1!: string;
-  protected header2!: string;
   protected text!: string;
 
   ngOnInit() {
@@ -24,9 +23,8 @@ export class PaidOnlineWritingJobsComponent {
 
     switch (this.param) {
       case 'articlewriters':
-        this.header1 ='Article Writers';
-        this.header2 = '$250 per day';
-        this.text = 'Hiring for entry-level article writing positions from all countries. These roles don\'t require professional writing experience, but you should have basic English writing skills and the ability to research topics.';
+        this.header1 ='Article Writing Jobs';
+        this.text = 'article writing job';
 
         this.metaTagService.setTags({
           title: 'PaidOnlineWritingJobs - Article Writers',
@@ -38,9 +36,8 @@ export class PaidOnlineWritingJobsComponent {
         break;
 
         case 'writeblogpost':
-          this.header1 ='Write Blog Posts';
-          this.header2 = '$35 an Hour';
-          this.text = 'Looking for new writers for entry-level blog writing jobs. You\'ll start at $35 per hour with full training provided. Your task is to write short blog posts introducing new products for e-commerce stores.';
+          this.header1 ='Blog Post Jobs';
+          this.text = 'blog post job';
   
           this.metaTagService.setTags({
             title: 'PaidOnlineWritingJobs - Write Blog Post',
@@ -53,9 +50,8 @@ export class PaidOnlineWritingJobsComponent {
 
 
           case 'onlinewriter':
-          this.header1 ='Online Writer';
-          this.header2 = '$25 - $35 an Hour';
-          this.text = 'These online writing jobs are open to everyone, regardless of experience, and welcome applications from all countries. You can earn $25 - $35 per hour, depending on your experience and the type of writing job.';
+          this.header1 ='Online Writing Jobs';
+          this.text = 'online writing job';
   
           this.metaTagService.setTags({
             title: 'PaidOnlineWritingJobs - Online Writer',
@@ -69,9 +65,8 @@ export class PaidOnlineWritingJobsComponent {
 
 
           case 'freelancewriter':
-          this.header1 ='Freelance Writer';
-          this.header2 = '$25 - $35 an Hour';
-          this.text = 'These freelance writing jobs are open to everyone, regardless of experience, and welcome applications from all countries. You can earn $25 - $35 per hour, depending on your experience and the type of writing job.';
+          this.header1 ='Freelance Writing Jobs';
+          this.text = 'freelance writing job';
   
           this.metaTagService.setTags({
             title: 'PaidOnlineWritingJobs - Freelance Writer',
