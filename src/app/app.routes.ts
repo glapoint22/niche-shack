@@ -19,5 +19,14 @@ export const routes: Routes = [
   {
     path: 'paidonlinewritingjobs/:id',
     loadComponent: () => import('./components/paid-online-writing-jobs/paid-online-writing-jobs.component').then(m => m.PaidOnlineWritingJobsComponent),
+  },
+  {
+    path: 'livechatjobs',
+    loadComponent: () => import('./components/live-chat-jobs/live-chat-jobs.component').then(m => m.LiveChatJobsComponent),
+    data: {
+      title: 'Live Chat Assistant',
+      description: 'Work as a live chat assistant from the comfort of your own home.',
+      url: 'livechatjobs'
+    }
   }
 ];
