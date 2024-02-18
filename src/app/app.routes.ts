@@ -13,20 +13,15 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'tedswoodworking/:id',
-    loadComponent: () => import('./components/teds-woodworking/teds-woodworking.component').then(m => m.TedsWoodworkingComponent),
-  },
-  {
     path: 'paidonlinewritingjobs/:id',
-    loadComponent: () => import('./components/paid-online-writing-jobs/paid-online-writing-jobs.component').then(m => m.PaidOnlineWritingJobsComponent),
+    loadComponent: () => import('./components/paid-online-writing-jobs/paid-online-writing-jobs.component').then(m => m.PaidOnlineWritingJobsComponent)
   },
   {
-    path: 'livechatjobs',
-    loadComponent: () => import('./components/live-chat-jobs/live-chat-jobs.component').then(m => m.LiveChatJobsComponent),
-    data: {
-      title: 'Live Chat Assistant',
-      description: 'Work as a live chat assistant from the comfort of your own home.',
-      url: 'livechatjobs'
-    }
+    path: 'socialsalerep/:id',
+    loadComponent: () => import('./components/social-sale-rep/social-sale-rep.component').then(m => m.SocialSaleRepComponent)
+  },
+  {
+    path: 'fat-burning-desserts/:id',
+    loadComponent: () => import('./components/fat-burning-desserts/fat-burning-desserts.component').then(m => m.FatBurningDessertsComponent)
   }
 ];

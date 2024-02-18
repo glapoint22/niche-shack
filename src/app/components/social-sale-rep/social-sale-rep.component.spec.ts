@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TedsWoodworkingComponent } from './teds-woodworking.component';
+import { SocialSaleRepComponent } from './social-sale-rep.component';
 
-describe('TedsWoodworkingComponent', () => {
-  let component: TedsWoodworkingComponent;
-  let fixture: ComponentFixture<TedsWoodworkingComponent>;
+describe('SocialSaleRepComponent', () => {
+  let component: SocialSaleRepComponent;
+  let fixture: ComponentFixture<SocialSaleRepComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TedsWoodworkingComponent]
+      imports: [SocialSaleRepComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TedsWoodworkingComponent);
+    fixture = TestBed.createComponent(SocialSaleRepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
