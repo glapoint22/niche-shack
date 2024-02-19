@@ -1,75 +1,70 @@
 <div class="container">
+    <div class="caption">FREE EBOOK!</div>
+
     <div class="grid">
         <div class="heading">
             {{heading}}
         </div>
 
-        <div style="grid-column: 1; ">
-
-            <div *ngIf="param === 'good-recipes'" class="text">Elevate your weight loss journey with this free ebook &ldquo;<strong style="color: white;">Fat Burning
-                Desserts</strong>,&rdquo; a treasure
-                trove of <strong class="keyword">good recipes for weight loss</strong>. Indulge in these delectable
-                treats, carefully crafted to support your health goals and make your path to a fitter you both enjoyable
-                and satisfying.</div>
+        <div>
+            <div *ngIf="param === 'good-recipes'" class="text">Elevate your weight loss journey with this free ebook
+                <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong> a treasure trove of good recipes for weight loss.
+                Indulge in these delectable treats, carefully crafted to support your health goals and make your path to
+                a fitter you both enjoyable and satisfying.</div>
 
 
-                
-
-
-
-            <div *ngIf="param === 'weight-loss-recipes'" class="text">Explore a world of culinary delights that align with your fitness goals with this free
-                ebook &ldquo;<strong style="color: white;">Fat Burning
-                    Desserts</strong>,&rdquo; featuring a diverse range of <strong class="keyword">weight loss
-                    recipes</strong>. Indulge in these flavorful creations that not only tantalize your taste buds but
-                also contribute to a healthier and more vibrant you on your weight loss journey.</div>
+            <div *ngIf="param === 'weight-loss-recipes'" class="text">Explore a world of culinary delights that align
+                with your fitness goals with this free ebook <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong>
+                featuring a diverse range of weight loss recipes. Indulge in these flavorful creations that not only
+                tantalize your taste buds but also contribute to a healthier and more vibrant you on your weight loss
+                journey.</div>
 
 
 
-                
-
-
-            <div *ngIf="param === 'diet-recipes'" class="text">Elevate your culinary experience on the path to a healthier lifestyle with this free
-                ebook &ldquo;<strong style="color: white;">Fat Burning
-                    Desserts</strong>,&rdquo; brimming with delectable <strong class="keyword">diet recipes</strong>. From
-                savory to sweet, discover a diverse array of treats designed to cater to your taste buds while aligning
-                with your dietary goals, making the journey towards a balanced and nourishing diet all the more
-                enjoyable.</div>
-
-
-                
-
-
-            <div *ngIf="param === 'free-weight-loss-recipes'" class="text">Embark on a culinary adventure toward a healthier you with this free ebook &ldquo;<strong style="color: white;">Fat Burning
-                Desserts</strong>,&rdquo; showcasing a delightful array of <strong class="keyword">free weight loss recipes</strong>.
-                Indulge in these delicious and nutritious creations that support your fitness journey without
-                compromising on flavor, making it easier than ever to enjoy guilt-free treats while working towards your
-                weight loss goals.</div>
-
-
-                
-
-            <div *ngIf="param === 'recipes-to-lose-weight'" class="text">Uncover the perfect blend of taste and wellness with this free ebook &ldquo;<strong style="color: white;">Fat Burning
-                Desserts</strong>,&rdquo; featuring a variety of <strong class="keyword">recipes to help you lose weight</strong>. Dive into these
-                flavorful creations crafted to support your weight loss journey, making every bite a step towards a
-                healthier and more vibrant lifestyle.</div>
-
-
-                
-
-
-            <div *ngIf="param === 'free-diet-recipes'" class="text">Explore the world of healthy eating without breaking the bank with this free ebook &ldquo;<strong style="color: white;">Fat Burning
-                Desserts</strong>,&rdquo; offering a diverse selection of delicious and nutritious <strong class="keyword">free diet recipes</strong>. Indulge in these flavorful creations that align with your dietary goals,
-                making it easy and accessible to maintain a balanced and satisfying diet without compromising on taste.
-            </div>
+            <div *ngIf="param === 'diet-recipes'" class="text">Elevate your culinary experience on the path to a
+                healthier lifestyle with this free ebook <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong> brimming
+                with delectable diet recipes. From savory to sweet, discover a diverse array of treats designed to cater
+                to your taste buds while aligning with your dietary goals, making the journey towards a balanced and
+                nourishing diet all the more enjoyable.</div>
 
 
 
 
-            <a [href]="hoplink">
-                <button>FREE Download</button>
+            <div *ngIf="param === 'free-weight-loss-recipes'" class="text">Embark on a culinary adventure toward a
+                healthier you with this free ebook <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong> showcasing a
+                delightful array of free weight loss recipes. Indulge in these delicious and nutritious creations that
+                support your fitness journey without compromising on flavor, making it easier than ever to enjoy
+                guilt-free treats while working towards your weight loss goals.</div>
+
+
+
+
+            <div *ngIf="param === 'recipes-to-lose-weight'" class="text">Uncover the perfect blend of taste and wellness
+                with this free ebook <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong> featuring a variety of recipes
+                to help you lose weight. Dive into these flavorful creations crafted to support your weight loss
+                journey, making every bite a step towards a healthier and more vibrant lifestyle.</div>
+
+
+
+
+
+            <div *ngIf="param === 'free-diet-recipes'" class="text">Explore the world of healthy eating without breaking
+                the bank with this free ebook <strong>&ldquo;Fat Burning Desserts,&rdquo;</strong> offering a diverse
+                selection of delicious and nutritious free diet recipes. Indulge in these flavorful creations that align
+                with your dietary goals, making it easy and accessible to maintain a balanced and satisfying diet
+                without compromising on taste.</div>
+
+
+
+
+            <a href="assets/fat-burning-desserts.pdf" download>
+                <button>Download Now</button>
             </a>
         </div>
 
-        <img ngSrc="fat-burning-desserts.png" width="360" height="466" priority>
+
+
+
+        <img ngSrc="fat-burning-desserts.avif" width="360" height="466" priority ngSrcset="300w, 816w" alt="Fat Burning Desserts">
     </div>
 </div>

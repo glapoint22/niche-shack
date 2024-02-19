@@ -11,12 +11,10 @@ import { MetaTagService } from '../../services/meta-tag/meta-tag.service';
   styleUrl: './fat-burning-desserts.component.scss'
 })
 export class FatBurningDessertsComponent {
-  protected hoplink: string = 'https://hop.clickbank.net/?affiliate=nshack&vendor=socialsrep&pid=joblandingpage&ifso=jobofferlivechatassistant';
   private route = inject(ActivatedRoute);
   protected param!: string | null;
   private metaTagService = inject(MetaTagService);
   protected heading!: string;
-  // protected keyword!: string;
 
   ngOnInit() {
     this.param = this.route.snapshot.paramMap.get('id');
