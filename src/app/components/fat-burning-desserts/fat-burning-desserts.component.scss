@@ -2,6 +2,14 @@
     min-height: 100vh;
     background: #002b69;
     padding: 30px 0;
+
+    @media screen and (max-width: 360px) {
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 240px) {
+        padding: 10px 0;
+    }
 }
 
 .grid {
@@ -12,24 +20,50 @@
     max-width: 935px;
     margin: auto;
     column-gap: 10px;
+
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: unset;
+        max-width: 540px;
+    }
+
+    @media screen and (max-width: 240px) {
+        padding: 10px;
+    }
 }
 
 
 .caption {
     text-align: center;
     color: #fe2674;
-    font-weight: bold;
     font-style: italic;
     font-size: 45px;
-    margin-bottom: 30px; padding: 0 10px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+
+    @media screen and (max-width: 240px) {
+        margin-bottom: 10px;
+    }
 }
 
 
 .heading {
     grid-column: 1;
     color: white;
-    font-weight: bold;
     font-size: 40px;
+
+    @media screen and (max-width: 1080px) {
+        text-align: center;
+    }
+}
+
+
+.caption,
+.heading {
+    font-weight: bold;
+
+    @media screen and (max-width: 200px) {
+        font-size: 20vw;
+    }
 }
 
 
@@ -44,9 +78,15 @@ button {
     color: white;
     font-weight: bold;
     margin-top: 30px;
+
+    @media screen and (max-width: 1080px) {
+        max-width: unset;
+    }
+
+    @media screen and (max-width: 220px) {
+        font-size: 10vw;
+    }
 }
-
-
 
 
 .text {
@@ -58,6 +98,15 @@ button {
     strong {
         color: #fe2674;
     }
+
+    @media screen and (max-width: 1080px) {
+        max-width: unset;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 130px) {
+        font-size: 16px;
+    }
 }
 
 img {
@@ -65,65 +114,14 @@ img {
     grid-row-end: span 3;
     grid-row-start: 1;
     max-width: 300px;
-    border: 3px solid #fe2674;
+    outline: 3px solid #fe2674;
     border-radius: 2px;
     box-shadow: 5px 2px 9px 6px #00000033;
-}
 
-
-@media screen and (max-width: 1080px) {
-    .grid {
-        grid-template-rows: unset;
-        max-width: 540px;
-    }
-
-    img {
+    @media screen and (max-width: 1080px) {
         grid-row-start: 2;
         grid-row-end: unset;
         grid-column: 1;
         margin: 30px auto 0;
-    }
-
-    .text {
-        max-width: unset;
-        margin-top: 20px;
-    }
-
-    button {
-        max-width: unset;
-    }
-}
-
-
-
-
-@media screen and (max-width: 240px) {
-    .grid {
-        padding: 10px;
-    }
-}
-
-
-@media screen and (max-width: 220px) {
-    button {
-        font-size: 10vw;
-    }
-}
-
-
-@media screen and (max-width: 200px) {
-    .caption {
-        font-size: 20vw;
-    }
-
-    .heading {
-        font-size: 20vw;
-    }
-}
-
-
-@media screen and (max-width: 130px) {
-    .text {
-        font-size: 16px;
     }
 }
