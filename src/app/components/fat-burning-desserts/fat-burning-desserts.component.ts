@@ -17,6 +17,8 @@ export class FatBurningDessertsComponent {
   protected heading!: string;
 
   ngOnInit() {
+    const image = 'images/fat-burning-desserts.avif';
+
     this.param = this.route.snapshot.paramMap.get('id');
 
     switch (this.param) {
@@ -27,6 +29,7 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Elevate your weight loss journey with this free fat-burning desserts ebook, a treasure trove of good recipes for weight loss.',
           url: 'fat-burning-desserts/good-recipes',
+          image: image
         });
         break;
 
@@ -37,6 +40,7 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Explore a world of culinary delights that align with your fitness goals with this free ebook featuring a diverse range of weight loss recipes.',
           url: 'fat-burning-desserts/weight-loss-recipes',
+          image: image
         });
         break;
 
@@ -47,6 +51,7 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Elevate your culinary experience on the path to a healthier lifestyle with this free ebook, brimming with delectable diet recipes.',
           url: 'fat-burning-desserts/diet-recipes',
+          image: image
         });
         break;
 
@@ -57,6 +62,7 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Embark on a culinary adventure toward a healthier you with this free ebook showcasing a delightful array of free weight loss recipes.',
           url: 'fat-burning-desserts/free-weight-loss-recipes',
+          image: image
         });
         break;
 
@@ -67,6 +73,7 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Uncover the perfect blend of taste and wellness with this free ebook featuring a variety of recipes to help you lose weight.',
           url: 'fat-burning-desserts/recipes-to-lose-weight',
+          image: image
         });
         break;
 
@@ -77,11 +84,21 @@ export class FatBurningDessertsComponent {
           title: this.heading,
           description: 'Explore the world of healthy eating without breaking the bank with this free ebook offering a diverse selection of delicious and nutritious free diet recipes.',
           url: 'fat-burning-desserts/free-diet-recipes',
+          image: image
         });
         break;
 
 
-      
+        default:
+          this.heading = 'Fat Burning Desserts';
+
+          this.metaTagService.setTags({
+            title: this.heading,
+            description: 'Explore the world of healthy eating without breaking the bank with this free ebook offering a diverse selection of delicious and nutritious free diet recipes.',
+            url: 'fat-burning-desserts',
+            image: image
+          });
+          break;
 
     }
 
